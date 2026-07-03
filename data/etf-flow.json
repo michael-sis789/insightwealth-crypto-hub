@@ -1,0 +1,54 @@
+{
+  "lastUpdated": "2026-07-02",
+  "source": "Manual JSON update - ETF issuers / Farside-style daily table",
+  "status": "Bullish",
+  "totalDailyNetFlow": "+$250M",
+  "sevenDayNetFlow": "+$1.18B",
+  "thirtyDayNetFlow": "+$4.65B",
+  "streak": "3日連續淨流入",
+  "interpretation": "今日ETF淨流入為正，代表機構資金需求改善，對BTC屬於短期利多。但仍需觀察是否延續到7日與30日周期。",
+  "funds": [
+    {
+      "ticker": "IBIT",
+      "issuer": "BlackRock",
+      "dailyFlow": "+$165M",
+      "totalAum": "$72.4B",
+      "status": "Bullish"
+    },
+    {
+      "ticker": "FBTC",
+      "issuer": "Fidelity",
+      "dailyFlow": "+$58M",
+      "totalAum": "$24.8B",
+      "status": "Bullish"
+    },
+    {
+      "ticker": "ARKB",
+      "issuer": "Ark",
+      "dailyFlow": "+$21M",
+      "totalAum": "$5.1B",
+      "status": "Bullish"
+    },
+    {
+      "ticker": "BITB",
+      "issuer": "Bitwise",
+      "dailyFlow": "+$14M",
+      "totalAum": "$4.7B",
+      "status": "Bullish"
+    },
+    {
+      "ticker": "GBTC",
+      "issuer": "Grayscale",
+      "dailyFlow": "-$32M",
+      "totalAum": "$18.6B",
+      "status": "Bearish"
+    },
+    {
+      "ticker": "Others",
+      "issuer": "其他發行商",
+      "dailyFlow": "+$24M",
+      "totalAum": "$9.2B",
+      "status": "Neutral"
+    }
+  ]
+}

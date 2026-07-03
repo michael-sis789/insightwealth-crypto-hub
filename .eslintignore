@@ -1,0 +1,5 @@
+next-env.d.ts
+.next/
+.netlify/
+node_modules/
+out/
