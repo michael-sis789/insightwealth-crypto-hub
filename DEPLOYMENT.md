@@ -23,6 +23,26 @@ The production build uses Next.js and Netlify's Next runtime through `@netlify/p
 
 ## GitHub Push Deploy Workflow
 
+This is the only deployment workflow for this project:
+
+```text
+Codex changes code
+-> npm run lint
+-> npm run build
+-> git add .
+-> git commit -m "clear message"
+-> git push origin main
+-> Netlify auto deploys
+```
+
+Never run:
+
+```bash
+netlify deploy --prod
+```
+
+Netlify deployment is handled only by GitHub automatic deploys from the `main` branch.
+
 Netlify CLI deploy is disabled for this project because `netlify deploy --prod` repeatedly fails with `JSONHTTPError: Forbidden` even after:
 
 - confirming `netlify status` is logged in
@@ -44,13 +64,62 @@ Future deploy process:
 1. Codex edits code.
 2. Codex runs:
    ```bash
-   npm run update:btc-prices
    npm run lint
    npm run build
    ```
-3. Codex commits changes.
-4. Codex pushes to GitHub.
-5. Netlify automatically deploys from the `main` branch.
+3. Codex stages changes:
+   ```bash
+   git add .
+   ```
+4. Codex commits with a clear message:
+   ```bash
+   git commit -m "clear message"
+   ```
+5. Codex pushes to GitHub:
+   ```bash
+   git push origin main
+   ```
+6. Netlify automatically deploys from the `main` branch.
+
+Run `npm run update:btc-prices` before lint/build only when the change needs refreshed cached BTC price data.
+
+## Auth Checks
+
+Before making deployment-related changes, check:
+
+```bash
+git remote -v
+git branch
+git status
+gh auth status
+netlify status
+```
+
+If `gh` is not installed but `git push origin main` works over SSH, GitHub CLI is optional for this workflow.
+
+If GitHub authentication is missing and GitHub CLI is installed, log in once:
+
+```bash
+gh auth login
+```
+
+If the GitHub repository does not exist, create it once at:
+
+```text
+https://github.com/new
+```
+
+Repository name:
+
+```text
+insightwealth-crypto-hub
+```
+
+Then set the remote to:
+
+```bash
+git remote set-url origin git@github.com:michael-sis789/insightwealth-crypto-hub.git
+```
 
 ## Netlify Dashboard Setup: Existing Site
 
