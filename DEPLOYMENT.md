@@ -33,6 +33,12 @@ Netlify CLI deploy is disabled for this project because `netlify deploy --prod` 
 
 Use GitHub-based Netlify automatic deploys instead.
 
+Current GitHub repository:
+
+```text
+https://github.com/michael-sis789/insightwealth-crypto-hub
+```
+
 Future deploy process:
 
 1. Codex edits code.
@@ -135,3 +141,26 @@ If CLI deploy fails with `JSONHTTPError: Forbidden`:
 - Site ID: `30efb912-abb9-49c7-b381-662f9c232a48`
 - Production URL: `https://insightwealth.live`
 - Netlify fallback URL: `https://insightwealth-live.netlify.app`
+- Git provider: GitHub
+- Repository: `michael-sis789/insightwealth-crypto-hub`
+- Production branch: `main`
+- Build command: `npm run build`
+- Publish directory: `.next`
+- Next.js runtime/plugin: `@netlify/plugin-nextjs`
+
+## Current Blocker
+
+The site is linked to GitHub automatic deploys, but Netlify currently shows:
+
+```text
+mic78ai's team has run out of credits
+Your sites may go offline and production deploys and Agent Runners are currently disabled.
+```
+
+The first GitHub-triggered production deploy was created as `6a47b4f632fc98530723bf20` and skipped with:
+
+```text
+Skipped due to account credit usage exceeded
+```
+
+Resolve this in Netlify under **Usage & billing** / **Upgrade team**. After credits are restored, push to `main` or retry the skipped production deploy from the Netlify dashboard.
