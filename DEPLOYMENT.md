@@ -170,23 +170,20 @@ Use this path only if you decide to create a replacement Netlify site in the Per
 
 ## Move From Team To Personal Netlify
 
-Current problem: the existing project belongs to `mic78ai's team`, and production deploys are skipped because that team has exceeded credits.
+Status: migration completed on 2026-07-04.
 
-Goal: keep the GitHub repo as the source of truth, but make `insightwealth.live` deploy from the Personal Netlify account.
+The live domain now belongs to the Personal Netlify project under `678illusion@gmail.com` / `678illusion's team`.
 
-### Current Team Site Inventory
+### Old Team Site Inventory
 
 - Site name: `insightwealth-live`
 - Site ID: `30efb912-abb9-49c7-b381-662f9c232a48`
-- Current owner/account: `mic78ai's team`
+- Owner/account: `mic78ai's team`
 - Account slug: `mic78ai`
 - Account type: `Free`
-- Production URL: `https://insightwealth.live`
 - Netlify fallback URL: `https://insightwealth-live.netlify.app`
-- Custom domain: `insightwealth.live`
-- Domain alias: `www.insightwealth.live`
-- SSL: enabled
-- Force SSL: enabled
+- Custom domain: removed
+- Domain alias: removed
 - Managed DNS: enabled
 - Git provider: GitHub
 - GitHub repo: `michael-sis789/insightwealth-crypto-hub`
@@ -197,6 +194,28 @@ Goal: keep the GitHub repo as the source of truth, but make `insightwealth.live`
 - Base directory: repository root
 - Next.js runtime/plugin: `@netlify/plugin-nextjs`
 - Functions region: `us-east-2` / `CMH`
+- Environment variables: none currently set for the project
+
+### Current Personal Site Inventory
+
+- Site name: `insightwealth-live-personal`
+- Owner/account: `678illusion's team`
+- Login email: `678illusion@gmail.com`
+- Production URL: `https://insightwealth.live`
+- Netlify fallback URL: `https://insightwealth-live-personal.netlify.app`
+- Custom domain: `insightwealth.live`
+- Domain alias: `www.insightwealth.live`
+- `www` behavior: redirects to `https://insightwealth.live`
+- HTTPS: enabled
+- Force HTTPS: enabled
+- Git provider: GitHub
+- GitHub repo: `michael-sis789/insightwealth-crypto-hub`
+- Repo URL: `https://github.com/michael-sis789/insightwealth-crypto-hub`
+- Production branch: `main`
+- Build command: `npm run build`
+- Publish directory: `.next`
+- Base directory: repository root
+- Next.js runtime/plugin: `@netlify/plugin-nextjs`
 - Environment variables: none currently set for the project
 
 ### Direct Transfer Option
@@ -360,30 +379,16 @@ If CLI deploy fails with `JSONHTTPError: Forbidden`:
 
 ## Current Netlify Site
 
-- Site name: `insightwealth-live`
-- Site ID: `30efb912-abb9-49c7-b381-662f9c232a48`
+- Site name: `insightwealth-live-personal`
+- Account: `678illusion's team`
 - Production URL: `https://insightwealth.live`
-- Netlify fallback URL: `https://insightwealth-live.netlify.app`
+- Netlify fallback URL: `https://insightwealth-live-personal.netlify.app`
 - Git provider: GitHub
 - Repository: `michael-sis789/insightwealth-crypto-hub`
 - Production branch: `main`
 - Build command: `npm run build`
 - Publish directory: `.next`
 - Next.js runtime/plugin: `@netlify/plugin-nextjs`
-
-## Current Blocker
-
-The site is linked to GitHub automatic deploys, but Netlify currently shows:
-
-```text
-mic78ai's team has run out of credits
-Your sites may go offline and production deploys and Agent Runners are currently disabled.
-```
-
-The first GitHub-triggered production deploy was created as `6a47b4f632fc98530723bf20` and skipped with:
-
-```text
-Skipped due to account credit usage exceeded
-```
-
-Resolve this in Netlify under **Usage & billing** / **Upgrade team**. After credits are restored, push to `main` or retry the skipped production deploy from the Netlify dashboard.
+- Custom domain: `insightwealth.live`
+- Domain alias: `www.insightwealth.live`
+- HTTPS: enabled and forced
