@@ -1,54 +1,54 @@
 {
-  "date": "2026-07-02",
-  "marketSentiment": "Neutral",
-  "bullScore": 62,
-  "summary": "今日市場偏中性。BTC短線反彈，但ETF資金仍需確認。長期投資者可繼續採用DCA策略，避免追漲殺跌。",
+  "date": "2026-07-08",
+  "marketSentiment": "Bullish",
+  "bullScore": 81,
+  "summary": "今日BTC市場偏多，Bull Score為81/100。BTC現貨約$62,968，24h變化-0.57%，價格短線承壓；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
   "news": [
     {
-      "headline": "BTC短線反彈，重新測試關鍵均線區",
-      "source": "洞見財富研究整理",
-      "summary": "BTC價格在震盪區間內回升，短線買盤有所改善，但成交量尚未明顯放大。",
-      "whyItMatters": "價格反彈需要量能與資金流配合，否則容易變成區間震盪。",
-      "btcImpact": "中性偏多",
+      "headline": "BTC現貨約$62,968，24h變化-0.57%",
+      "source": "CoinGecko API",
+      "summary": "BTC 7日變化為+7.28%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
+      "whyItMatters": "價格是最直接的市場訊號，但單獨使用容易追漲殺跌，必須和情緒、資金流與槓桿資料一起看。",
+      "btcImpact": "中性偏空",
       "ethImpact": "中性",
       "altcoinImpact": "分化"
     },
     {
-      "headline": "Bitcoin ETF出現單日淨流入",
-      "source": "ETF手動數據輸入",
-      "summary": "現貨Bitcoin ETF合計錄得正流入，機構需求較前幾日改善。",
-      "whyItMatters": "ETF資金是本輪BTC周期的重要需求端指標。",
+      "headline": "Fear & Greed為20，分類：Extreme Fear",
+      "source": "Alternative.me Fear & Greed API",
+      "summary": "市場處於恐慌區，長期投資者可更重視分批與現金流管理。",
+      "whyItMatters": "情緒指標可以幫助投資者避免在極端恐慌或極端貪婪時做出衝動決策。",
+      "btcImpact": "長期偏多",
+      "ethImpact": "中性",
+      "altcoinImpact": "分化"
+    },
+    {
+      "headline": "Bitcoin ETF日淨流：+$250M",
+      "source": "Manual JSON update - ETF issuers / Farside-style daily table",
+      "summary": "今日ETF淨流入為正，代表機構資金需求改善，對BTC屬於短期利多。但仍需觀察是否延續到7日與30日周期。 目前ETF資料標示為每日更新，不當作即時交易訊號。",
+      "whyItMatters": "ETF資金流是本輪BTC需求端的重要觀察點，能反映機構資金是否持續進場。",
       "btcImpact": "偏多",
       "ethImpact": "中性",
-      "altcoinImpact": "中性"
+      "altcoinImpact": "間接影響風險偏好"
     },
     {
-      "headline": "Fear & Greed維持中性區間",
-      "source": "Alternative.me placeholder",
-      "summary": "市場情緒未進入極端貪婪，也未回到恐慌區。",
-      "whyItMatters": "中性情緒較適合紀律定投，不適合情緒化滿倉。",
+      "headline": "Funding Rate：0.0048%",
+      "source": "Binance USD-M Futures fundingRate API",
+      "summary": "槓桿情緒尚未極端，需配合價格與OI觀察。",
+      "whyItMatters": "資金費率可以觀察合約市場是否過度偏多或偏空，避免在槓桿擁擠時追高。",
       "btcImpact": "中性",
       "ethImpact": "中性",
-      "altcoinImpact": "中性"
+      "altcoinImpact": "高槓桿幣種波動更大"
     },
     {
-      "headline": "合約未平倉量回升",
-      "source": "Coinglass placeholder",
-      "summary": "OI增加代表槓桿活躍度上升，可能放大接下來的波動。",
-      "whyItMatters": "槓桿市場升溫時，投資者更需要設好風險邊界。",
-      "btcImpact": "中性",
-      "ethImpact": "中性",
-      "altcoinImpact": "偏空"
-    },
-    {
-      "headline": "穩定幣供給小幅回升",
-      "source": "鏈上數據 placeholder",
-      "summary": "穩定幣供給趨勢改善，代表場內潛在流動性有所增加。",
-      "whyItMatters": "流動性改善有助支撐市場，但仍要看是否流向BTC與ETH。",
-      "btcImpact": "偏多",
-      "ethImpact": "偏多",
-      "altcoinImpact": "中性偏多"
+      "headline": "鏈上指標：MVRV 1.2039，NUPL 0.1694",
+      "source": "BGeometrics",
+      "summary": "Puell Multiple目前為0.6848。鏈上資料以日更或人工確認為主，重點是觀察長期估值溫度，不是短線追單訊號。",
+      "whyItMatters": "MVRV、NUPL與Puell可幫助判斷BTC週期溫度，避免只看價格做決策。",
+      "btcImpact": "長期參考",
+      "ethImpact": "間接參考",
+      "altcoinImpact": "間接參考"
     }
   ],
-  "dcaOpinion": "今日不適合追高，也不需要恐慌賣出。若原本就有長期BTC計畫，可維持固定DCA；若價格快速拉升，可降低追加頻率，等待回調。投資靠紀律，不靠運氣；財富靠堅持，不靠奇蹟。"
+  "dcaOpinion": "今日市場分數偏多，但長期BTC投資者不應因單日分數提高而追高。較合理的做法是維持原本定投節奏，若短線漲幅過快，可把追加資金拆分到多次執行。投資靠紀律，不靠運氣；財富靠堅持，不靠奇蹟。"
 }
