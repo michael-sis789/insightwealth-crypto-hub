@@ -10,7 +10,8 @@
     "update:etf": "node scripts/update-etf.mjs",
     "update:onchain": "node scripts/update-onchain.mjs",
     "update:btc-prices": "node --no-warnings --experimental-strip-types scripts/update-btc-prices.ts",
-    "update:daily-data": "node scripts/update-daily-data.mjs"
+    "update:daily-data": "node scripts/update-daily-data.mjs",
+    "update:website-daily": "zsh scripts/update-website-daily.sh"
   },
   "dependencies": {
     "@next/third-parties": "^15.3.5",

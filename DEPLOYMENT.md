@@ -84,6 +84,48 @@ Future deploy process:
 
 Run `npm run update:btc-prices` before lint/build only when the change needs refreshed cached BTC price data.
 
+## Daily Data Auto Update
+
+The production data cache is updated every day at 8:00 AM Malaysia time by this LaunchAgent:
+
+```text
+/Users/chai/Library/LaunchAgents/com.chai.insightwealth.website-daily-update.plist
+```
+
+The LaunchAgent runs:
+
+```bash
+/bin/zsh "/Users/chai/Documents/ai news video/AI_Crypto_Share/crypto-hub/scripts/update-website-daily.sh"
+```
+
+Tracked npm entry point:
+
+```bash
+npm run update:website-daily
+```
+
+The daily wrapper:
+
+1. Updates local BTC historical price cache.
+2. Updates on-chain indicators from available free sources.
+3. Refreshes the ETF daily marker.
+4. Updates market/Fear & Greed/funding caches and recalculates Bull Score.
+5. Runs `npm run lint`.
+6. Runs `npm run build`.
+7. Stages only `data/*.json` and `data/cache/*.json`.
+8. Commits changed data with `Update daily crypto data YYYY-MM-DD`.
+9. Pushes to GitHub `main`, then Personal Netlify auto-deploys.
+
+Logs:
+
+```text
+/Users/chai/Documents/ai news video/logs/insightwealth-website-daily-update.log
+/Users/chai/Documents/ai news video/logs/insightwealth-website-daily-update.launchd.out.log
+/Users/chai/Documents/ai news video/logs/insightwealth-website-daily-update.launchd.err.log
+```
+
+The job uses a lock directory at `/tmp/insightwealth-website-daily-update.lock` so overlapping updates exit safely.
+
 ## Auth Checks
 
 Before making deployment-related changes, check:
