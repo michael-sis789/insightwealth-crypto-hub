@@ -26,6 +26,7 @@ export function Footer() {
           <Link href={localizedPath("/about", language)}>{language === "en" ? "About" : "關於我們"}</Link>
           <Link href={localizedPath("/contact", language)}>{language === "en" ? "Contact" : "聯絡"}</Link>
           <Link href={localizedPath("/daily-crypto-brief", language)}>{language === "en" ? "Daily Crypto Brief" : "每日簡報"}</Link>
+          <a href="https://youtube.com/@9insightwealth" target="_blank" rel="noreferrer">{language === "en" ? "YouTube Channel" : "YouTube 頻道"}</a>
         </div>
         <div className="grid gap-2 text-sm text-slate-400">
           <Link href={localizedPath("/disclaimer", language)}>{language === "en" ? "Disclaimer" : "免責聲明"}</Link>

@@ -4,6 +4,7 @@ import { ArrowRight, BarChart3, CalendarDays, Calculator, LineChart } from "luci
 import { AdSlot } from "@/components/AdSlot";
 import { MetricCard } from "@/components/MetricCard";
 import { JsonLd } from "@/components/JsonLd";
+import { YouTubePanel } from "@/components/YouTubePanel";
 import { makeMetadata, site } from "@/lib/seo";
 import { getBtcDashboardData, getDailyBrief } from "@/lib/crypto-data";
 
@@ -61,6 +62,18 @@ export default async function HomePage() {
             <p className="mt-2 text-lg font-bold text-white">{brief.news[0].headline}</p>
             <p className="mt-2 text-slate-400">{brief.news[0].summary}</p>
           </Link>
+        </section>
+        <section className="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr]">
+          <YouTubePanel />
+          <div className="premium-card rounded-lg p-6">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-gold">Editorial Standard</p>
+            <h2 className="mt-3 text-2xl font-bold text-white">我們如何降低薄內容風險</h2>
+            <div className="mt-4 space-y-4 leading-8 text-slate-300">
+              <p>洞見財富不是搬運價格的小工具站。每天的首頁、BTC儀表盤與每日簡報會把同一組核心問題整理成可閱讀的判斷框架：BTC價格是否只是短線波動？ETF資金是否確認需求？市場情緒是否過熱或恐慌？長期投資者是否應該維持DCA紀律？</p>
+              <p>所有數據都標示來源與更新時間。無法可靠即時取得的資料，例如部分鏈上指標與ETF流量，不會被包裝成即時數據。這讓讀者知道哪些資訊適合短期觀察，哪些只適合長期週期分析。</p>
+              <p>投資靠紀律，不靠運氣；財富靠堅持，不靠奇蹟。本站所有內容都以教育為目的，不提供買賣建議，不承諾收益，也不鼓勵all-in或追漲殺跌。</p>
+            </div>
+          </div>
         </section>
         <AdSlot slotId="home-in-content" format="horizontal" className="mt-10" />
         <section className="mt-10">
