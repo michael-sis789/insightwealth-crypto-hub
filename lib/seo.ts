@@ -15,7 +15,7 @@ export function makeMetadata(title: string, description: string, path = "/", loc
   const zhPath = localizedPath(path, "zh");
   const enPath = localizedPath(path, "en");
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: url,
@@ -29,7 +29,7 @@ export function makeMetadata(title: string, description: string, path = "/", loc
       title,
       description,
       url,
-      siteName: site.name,
+      siteName: locale === "en" ? site.englishName : site.name,
       images: [{ url: site.ogImage, width: 512, height: 512 }],
       locale: locale === "en" ? "en_US" : "zh_TW",
       type: "website"

@@ -29,7 +29,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-line bg-ink/88 backdrop-blur">
       <div className="container-shell flex min-h-20 items-center justify-between gap-4 py-3">
         <Link href={homeHref} className="flex items-center gap-3" aria-label="Insight Wealth Crypto Hub Home">
-          <Image src="/assets/channel_logo.png" alt="洞見財富 logo" width={44} height={44} className="rounded" priority />
+          <Image src="/assets/channel_logo.png" alt={language === "en" ? "Insight Wealth logo" : "洞見財富 logo"} width={44} height={44} className="rounded" priority />
           <div>
             <div className="text-base font-bold text-white">{language === "en" ? "Insight Wealth" : "洞見財富"}</div>
             <div className="text-xs uppercase tracking-[0.18em] text-gold">Crypto Hub</div>

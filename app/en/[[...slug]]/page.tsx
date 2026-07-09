@@ -8,6 +8,7 @@ import { MetricCard } from "@/components/MetricCard";
 import { getBtcDashboardData, getDailyBrief, getEvents } from "@/lib/crypto-data";
 import { localizedRoutes, routeFromSlug } from "@/lib/i18n";
 import { makeMetadata, site } from "@/lib/seo";
+import type { Metric } from "@/lib/types";
 
 type PageProps = {
   params: Promise<{ slug?: string[] }>;
@@ -157,14 +158,119 @@ function ToolsGrid() {
   );
 }
 
+const metricCopy: Record<string, Partial<Metric>> = {
+  price: {
+    explanation: "BTC spot price comes from CoinGecko. If CoinGecko is unavailable, price and 24h change fall back to Binance public ticker data."
+  },
+  fearGreed: {
+    explanation: "The Alternative.me sentiment index updates daily. Extreme fear can signal market stress, while extreme greed can increase chasing risk."
+  },
+  etfFlow: {
+    change: "3-day positive inflow streak",
+    explanation: "Positive ETF net flow can indicate improving institutional demand for Bitcoin. ETF flow is updated daily and should not be treated as real-time trading data."
+  },
+  bullScore: {
+    explanation: "This score combines BTC price, Fear & Greed, ETF flow, funding and daily on-chain data to summarize today's market bias for long-term BTC investors."
+  },
+  dcaOpinion: {
+    value: "Constructive, but do not chase",
+    explanation: "The DCA view prioritizes risk management and long-term discipline. It does not encourage all-in behavior, panic selling or chasing pumps."
+  },
+  funding: {
+    explanation: "A higher funding rate can show crowded long leverage. Negative funding can indicate stronger short pressure."
+  },
+  mvrv: {
+    explanation: "MVRV compares Bitcoin market value with realized value. It is useful for cycle context, not short-term prediction."
+  },
+  nupl: {
+    explanation: "NUPL estimates unrealized profit and loss across the Bitcoin network. It helps judge market cycle temperature."
+  },
+  puell: {
+    explanation: "Puell Multiple compares miner revenue with its historical average and can help identify cycle extremes."
+  }
+};
+
+const dcaValueCopy: Record<string, string> = {
+  "偏多但避免追高": "Constructive, but do not chase",
+  "恐慌區可分批DCA": "Fear zone: consider staged DCA",
+  "降低倉位節奏": "Reduce position pace",
+  "維持紀律DCA": "Maintain disciplined DCA"
+};
+
+function englishTimestamp(value: string) {
+  return value.replace("上午", "AM ").replace("下午", "PM ");
+}
+
+function englishMetric(metric: Metric): Metric {
+  const copy = metricCopy[metric.id] ?? {};
+  return {
+    ...metric,
+    ...copy,
+    value: copy.value ?? dcaValueCopy[metric.value] ?? metric.value,
+    lastUpdated: englishTimestamp(metric.lastUpdated),
+    updateFrequency: metric.updateFrequency?.replace("約", "about").replace("每日", "daily").replace("更新", "update"),
+    explanation: copy.explanation ?? metric.explanation
+  };
+}
+
+const eventCopy: Record<string, { title: string; explanation: string }> = {
+  "FOMC會議紀要": {
+    title: "FOMC Meeting Minutes",
+    explanation: "Markets will watch the Federal Reserve's language on inflation, employment and the path of rate cuts."
+  },
+  "美國CPI公布": {
+    title: "U.S. CPI Release",
+    explanation: "A lower-than-expected CPI print may support risk assets, while a higher print can increase rate pressure."
+  },
+  "Bitcoin ETF資金再平衡觀察": {
+    title: "Bitcoin ETF Flow Rebalancing Watch",
+    explanation: "Mid-month ETF flow changes can help investors read institutional risk appetite."
+  },
+  "主要Layer2代幣解鎖": {
+    title: "Major Layer 2 Token Unlocks",
+    explanation: "Token unlocks can increase short-term supply. Watch volume, liquidity and holder behavior."
+  },
+  "SEC加密監管評論期": {
+    title: "SEC Crypto Regulation Comment Period",
+    explanation: "Regulatory tone can affect exchanges, ETFs and token issuance expectations."
+  },
+  "Ethereum網路升級測試窗口": {
+    title: "Ethereum Network Upgrade Test Window",
+    explanation: "A smooth upgrade process can improve market confidence in the Ethereum ecosystem."
+  },
+  "Bitcoin下一輪減半周期進度觀察": {
+    title: "Bitcoin Halving Cycle Progress Watch",
+    explanation: "Post-halving supply effects usually require long-cycle observation and should not be used alone for short-term trades."
+  }
+};
+
+function englishEvent(event: ReturnType<typeof getEvents>[number]) {
+  const copy = eventCopy[event.title] ?? { title: event.title, explanation: event.explanation };
+  return {
+    ...event,
+    title: copy.title,
+    explanation: copy.explanation,
+    impact: event.impact.charAt(0).toUpperCase() + event.impact.slice(1)
+  };
+}
+
+function englishBrief(brief: ReturnType<typeof getDailyBrief>) {
+  return {
+    headline: `BTC daily brief: Bull Score ${brief.bullScore}/100`,
+    summary: `Today's BTC market status is ${brief.marketSentiment.toLowerCase()} with a Bull Score of ${brief.bullScore}/100. Use the daily brief to review BTC price, sentiment, ETF flow, funding and on-chain context without chasing short-term moves.`,
+    dcaOpinion: "For long-term BTC investors, the priority is disciplined DCA, position sizing and risk control. A higher daily score does not mean investors should chase price."
+  };
+}
+
 export default async function EnglishPage({ params }: PageProps) {
   const route = routeFromSlug((await params).slug);
   const copy = pageCopy[route];
   if (!copy) notFound();
 
   const [dashboard, brief] = await Promise.all([getBtcDashboardData(), Promise.resolve(getDailyBrief())]);
-  const primary = dashboard.metrics.filter((metric) => ["price", "fearGreed", "etfFlow", "bullScore", "dcaOpinion"].includes(metric.id));
-  const events = getEvents().slice(0, 4);
+  const primary = dashboard.metrics.filter((metric) => ["price", "fearGreed", "etfFlow", "bullScore", "dcaOpinion"].includes(metric.id)).map(englishMetric);
+  const events = getEvents().slice(0, 4).map(englishEvent);
+  const briefCopy = englishBrief(brief);
 
   return (
     <>
@@ -194,9 +300,9 @@ export default async function EnglishPage({ params }: PageProps) {
           <section className="mt-10 grid gap-4">
             <div className="premium-card rounded-lg p-6">
               <p className="text-sm text-gold">{brief.date} · Bull Score {brief.bullScore}/100</p>
-              <h2 className="mt-3 text-2xl font-bold text-white">{brief.news[0].headline}</h2>
-              <p className="mt-4 leading-8 text-slate-300">{brief.summary}</p>
-              <p className="mt-4 leading-8 text-slate-400">{brief.dcaOpinion}</p>
+              <h2 className="mt-3 text-2xl font-bold text-white">{briefCopy.headline}</h2>
+              <p className="mt-4 leading-8 text-slate-300">{briefCopy.summary}</p>
+              <p className="mt-4 leading-8 text-slate-400">{briefCopy.dcaOpinion}</p>
             </div>
           </section>
         )}
