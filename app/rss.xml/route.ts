@@ -1,8 +1,19 @@
 import { site } from "@/lib/seo";
+import { newsArticles, seoPages } from "@/lib/seo-hub-content";
 
 export const dynamic = "force-static";
 
 const items = [
+  ...newsArticles.map((article) => ({
+    title: article.zh.title,
+    href: `/news/${article.slug}`,
+    description: article.zh.description
+  })),
+  ...seoPages.map((page) => ({
+    title: page.zh.title,
+    href: `/${page.slug}`,
+    description: page.zh.description
+  })),
   {
     title: "Daily Crypto Brief",
     href: "/daily-crypto-brief",

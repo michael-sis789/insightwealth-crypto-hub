@@ -50,6 +50,7 @@ export function Header() {
           <Link
             href={switchHref}
             onClick={() => rememberLanguage(otherLanguage)}
+            data-analytics="language-switch"
             className="inline-flex items-center gap-1 rounded-md border border-line px-3 py-2 text-sm text-slate-300 hover:border-gold/50 hover:text-gold"
           >
             <Languages className="h-4 w-4" />

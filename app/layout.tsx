@@ -4,6 +4,7 @@ import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { AnalyticsEvents } from "@/components/AnalyticsEvents";
 import { site } from "@/lib/seo";
 
 const noto = Noto_Sans_TC({ subsets: ["latin"], weight: ["400", "500", "700", "900"], display: "swap" });
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <AnalyticsEvents />
         <GoogleAnalytics gaId="G-BBPEST0DDW" />
       </body>
     </html>

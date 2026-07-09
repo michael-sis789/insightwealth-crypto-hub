@@ -73,7 +73,7 @@ export function DcaCalculator() {
   ] : [];
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
+    <div className="grid gap-6 lg:grid-cols-[360px_1fr]" data-calculator="btc-dca">
       <form className="premium-card rounded-lg p-5" onSubmit={(event) => event.preventDefault()}>
         <h2 className="text-lg font-bold text-white">DCA參數</h2>
         <label className="mt-4 block text-sm text-slate-300">開始日期<input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} className="mt-2 w-full rounded-md border border-line bg-ink px-3 py-2" /></label>

@@ -13,9 +13,9 @@ export const dynamic = "force-dynamic";
 
 const tools = [
   { href: "/btc-dca-calculator", title: "BTC DCA Calculator", icon: Calculator, text: "測算長期定投BTC的投入、收益、回撤與風險。" },
-  { href: "/crypto-etf-flow", title: "ETF Flow Tracker", icon: LineChart, text: "追蹤IBIT、FBTC、ARKB、BITB、GBTC等ETF流向。" },
-  { href: "/bull-bear-probability", title: "Bull vs Bear Probability", icon: BarChart3, text: "用價格、情緒、ETF、鏈上與槓桿資料形成0-100分模型。" },
-  { href: "/crypto-calendar", title: "Crypto Calendar", icon: CalendarDays, text: "整理CPI、FOMC、SEC、ETF期限、升級與解鎖事件。" }
+  { href: "/bitcoin-etf-flow", title: "Bitcoin ETF Flow", icon: LineChart, text: "追蹤IBIT、FBTC、ARKB、BITB、GBTC等ETF流向。" },
+  { href: "/btc-bull-bear-indicator", title: "Bull Bear Indicator", icon: BarChart3, text: "用價格、情緒、ETF、鏈上與槓桿資料形成0-100分模型。" },
+  { href: "/bitcoin-fear-greed-index", title: "Fear & Greed Index", icon: CalendarDays, text: "判斷市場恐懼、貪婪與DCA節奏。" }
 ];
 
 export default async function HomePage() {
@@ -31,7 +31,7 @@ export default async function HomePage() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-gold">Insight Wealth Crypto Hub</p>
             <h1 className="mt-5 max-w-4xl text-balance text-5xl font-black leading-tight text-white md:text-7xl">洞見財富 Crypto Hub</h1>
-            <p className="mt-6 max-w-2xl text-xl leading-9 text-slate-300">不是加密百科，而是每日BTC決策儀表盤。用價格、情緒、ETF資金、Bull Score與DCA觀點，快速看懂今天的市場重點。</p>
+            <p className="mt-6 max-w-2xl text-xl leading-9 text-slate-300">Free Bitcoin dashboard, DCA calculator, ETF flow tracker and crypto market sentiment tools. 不是加密百科，而是每日BTC決策儀表盤，用價格、情緒、ETF資金、Bull Score與DCA觀點看懂今天市場。</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/btc-dashboard" className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-bold text-ink">查看今日BTC儀表盤 <ArrowRight className="h-4 w-4" /></Link>
               <Link href="/btc-dca-calculator" className="rounded-md border border-gold/40 px-5 py-3 font-bold text-gold hover:bg-gold/10">使用DCA計算器</Link>

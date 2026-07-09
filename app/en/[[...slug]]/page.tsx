@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowRight, BookOpen, Calculator, HelpCircle, ShieldCheck } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
+import { NewsArticlePage } from "@/components/NewsArticlePage";
+import { SeoLandingPage } from "@/components/SeoLandingPage";
 import { JsonLd } from "@/components/JsonLd";
 import { MetricCard } from "@/components/MetricCard";
 import { getBtcDashboardData, getDailyBrief, getEvents } from "@/lib/crypto-data";
 import { localizedRoutes, routeFromSlug } from "@/lib/i18n";
 import { makeMetadata, site } from "@/lib/seo";
+import { getNewsArticle, getSeoPage, newsArticles, seoPages } from "@/lib/seo-hub-content";
 import type { Metric } from "@/lib/types";
 
 type PageProps = {
@@ -117,15 +120,25 @@ const pageCopy: Record<string, { title: string; description: string; heading: st
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const route = routeFromSlug((await params).slug);
+  const seoPage = getSeoPage(route.slice(1));
+  if (seoPage) return makeMetadata(seoPage.en.title, seoPage.en.description, route, "en");
+  if (route.startsWith("/news/")) {
+    const article = getNewsArticle(route.replace("/news/", ""));
+    if (article) return makeMetadata(article.en.title, article.en.description, route, "en");
+  }
   const copy = pageCopy[route];
   if (!copy) return makeMetadata("Insight Wealth Crypto Hub", site.description, "/", "en");
   return makeMetadata(copy.title, copy.description, route, "en");
 }
 
 export function generateStaticParams() {
-  return localizedRoutes.map((route) => ({
-    slug: route === "/" ? undefined : route.slice(1).split("/")
-  }));
+  return [
+    ...localizedRoutes.map((route) => ({
+      slug: route === "/" ? undefined : route.slice(1).split("/")
+    })),
+    ...seoPages.map((page) => ({ slug: [page.slug] })),
+    ...newsArticles.map((article) => ({ slug: ["news", article.slug] }))
+  ];
 }
 
 function schemaFor(route: string, copy: (typeof pageCopy)[string]) {
@@ -264,6 +277,12 @@ function englishBrief(brief: ReturnType<typeof getDailyBrief>) {
 
 export default async function EnglishPage({ params }: PageProps) {
   const route = routeFromSlug((await params).slug);
+  const seoPage = getSeoPage(route.slice(1));
+  if (seoPage) return <SeoLandingPage page={seoPage} locale="en" />;
+  if (route.startsWith("/news/")) {
+    const article = getNewsArticle(route.replace("/news/", ""));
+    if (article) return <NewsArticlePage article={article} locale="en" />;
+  }
   const copy = pageCopy[route];
   if (!copy) notFound();
 
