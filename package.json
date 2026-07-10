@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "update:etf": "node scripts/update-etf.mjs",
     "update:onchain": "node scripts/update-onchain.mjs",
+    "update:youtube": "node scripts/update-youtube-videos.mjs",
     "update:daily-brief": "node scripts/update-daily-brief.mjs",
     "update:btc-prices": "node --no-warnings --experimental-strip-types scripts/update-btc-prices.ts",
     "update:daily-data": "node scripts/update-daily-data.mjs",

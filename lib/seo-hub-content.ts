@@ -395,6 +395,7 @@ export const newsArticles: NewsArticle[] = [
   {
     slug: "2026-07-09-sol-gpt56-microstrategy-selloff",
     date: "2026-07-09",
+    videoUrl: "https://www.youtube.com/embed/S4LBtsh6yt0",
     zh: {
       title: "GPT-5.6、Strategy BTC框架與FOMC後市場反應",
       description: "洞見財富每日影片文章：解析GPT-5.6與Sol/Terra/Luna話題、Strategy 12.5B BTC框架、FOMC會議紀要與BTC風險管理。",

@@ -56,6 +56,7 @@ run_data_step "On-chain indicators" npm run update:onchain
 run_data_step "ETF daily marker" npm run update:etf
 run_data_step "Market cache and bull score" npm run update:daily-data
 run_data_step "Daily brief" npm run update:daily-brief
+run_data_step "YouTube latest video" npm run update:youtube
 
 run_required_step "Lint" npm run lint || exit 1
 run_required_step "Build" npm run build || exit 1
