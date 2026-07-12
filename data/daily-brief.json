@@ -1,13 +1,13 @@
 {
-  "date": "2026-07-11",
+  "date": "2026-07-12",
   "marketSentiment": "Bullish",
   "bullScore": 84,
-  "summary": "今日BTC市場偏多，Bull Score為84/100。BTC現貨約$64,104，24h變化+0.46%，價格短線震盪；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
+  "summary": "今日BTC市場偏多，Bull Score為84/100。BTC現貨約$64,113，24h變化-0.02%，價格短線震盪；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
   "news": [
     {
-      "headline": "BTC現貨約$64,104，24h變化+0.46%",
+      "headline": "BTC現貨約$64,113，24h變化-0.02%",
       "source": "CoinGecko API",
-      "summary": "BTC 7日變化為+2.67%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
+      "summary": "BTC 7日變化為+2.37%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
       "whyItMatters": "價格是最直接的市場訊號，但單獨使用容易追漲殺跌，必須和情緒、資金流與槓桿資料一起看。",
       "btcImpact": "中性",
       "ethImpact": "中性",
@@ -41,9 +41,9 @@
       "altcoinImpact": "高槓桿幣種波動更大"
     },
     {
-      "headline": "鏈上指標：MVRV 1.2201，NUPL 0.1804",
+      "headline": "鏈上指標：MVRV 1.214，NUPL 0.1763",
       "source": "BGeometrics",
-      "summary": "Puell Multiple目前為0.6448。鏈上資料以日更或人工確認為主，重點是觀察長期估值溫度，不是短線追單訊號。",
+      "summary": "Puell Multiple目前為0.6928。鏈上資料以日更或人工確認為主，重點是觀察長期估值溫度，不是短線追單訊號。",
       "whyItMatters": "MVRV、NUPL與Puell可幫助判斷BTC週期溫度，避免只看價格做決策。",
       "btcImpact": "長期參考",
       "ethImpact": "間接參考",
