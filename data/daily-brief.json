@@ -1,15 +1,15 @@
 {
   "date": "2026-07-16",
   "marketSentiment": "Bullish",
-  "bullScore": 86,
-  "summary": "今日BTC市場偏多，Bull Score為86/100。BTC現貨約$64,582，24h變化+0.05%，價格短線震盪；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
+  "bullScore": 78,
+  "summary": "今日BTC市場偏多，Bull Score為78/100。BTC現貨約$64,175，24h變化-0.58%，價格短線承壓；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
   "news": [
     {
-      "headline": "BTC現貨約$64,582，24h變化+0.05%",
+      "headline": "BTC現貨約$64,175，24h變化-0.58%",
       "source": "CoinGecko API",
-      "summary": "BTC 7日變化為+4.41%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
+      "summary": "BTC 7日變化為+2.16%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
       "whyItMatters": "價格是最直接的市場訊號，但單獨使用容易追漲殺跌，必須和情緒、資金流與槓桿資料一起看。",
-      "btcImpact": "中性",
+      "btcImpact": "中性偏空",
       "ethImpact": "中性",
       "altcoinImpact": "分化"
     },
@@ -32,7 +32,7 @@
       "altcoinImpact": "間接影響風險偏好"
     },
     {
-      "headline": "Funding Rate：資料暫不可用",
+      "headline": "Funding Rate：0.0024%",
       "source": "Binance USD-M Futures fundingRate API",
       "summary": "槓桿情緒尚未極端，需配合價格與OI觀察。",
       "whyItMatters": "資金費率可以觀察合約市場是否過度偏多或偏空，避免在槓桿擁擠時追高。",
