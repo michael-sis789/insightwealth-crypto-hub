@@ -35,6 +35,9 @@ jobs:
       - name: Refresh ETF daily marker
         run: npm run update:etf
 
+      - name: Update crypto event calendar
+        run: npm run update:events
+
       - name: Update market cache and bull score
         run: npm run update:daily-data
 

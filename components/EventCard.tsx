@@ -7,6 +7,8 @@ type EventItem = {
   impact: string;
   explanation: string;
   assets: string[];
+  source?: string;
+  sourceUrl?: string;
 };
 
 export function EventCard({ event }: { event: EventItem }) {
@@ -30,6 +32,16 @@ export function EventCard({ event }: { event: EventItem }) {
       </div>
       <p className="mt-3 text-sm text-slate-400">{event.category}</p>
       <p className="mt-3 leading-7 text-slate-300">{event.explanation}</p>
+      {event.source && (
+        <p className="mt-3 text-xs text-slate-500">
+          Source:{" "}
+          {event.sourceUrl ? (
+            <a href={event.sourceUrl} target="_blank" rel="noreferrer" className="text-gold hover:underline">
+              {event.source}
+            </a>
+          ) : event.source}
+        </p>
+      )}
       <div className="mt-4 flex flex-wrap gap-2">
         {event.assets.map((asset) => (
           <span key={asset} className="rounded border border-line px-2 py-1 text-xs text-slate-400">

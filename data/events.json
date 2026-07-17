@@ -1,9 +1,297 @@
 [
-  { "date": "2026-07-08", "title": "FOMC會議紀要", "category": "Macro", "impact": "high", "explanation": "市場將關注聯準會對通膨、就業與降息路徑的措辭。", "assets": ["BTC", "ETH", "US Stocks"] },
-  { "date": "2026-07-11", "title": "美國CPI公布", "category": "Macro", "impact": "high", "explanation": "CPI若低於預期，可能支持風險資產；若高於預期，則提高利率壓力。", "assets": ["BTC", "ETH", "Altcoins"] },
-  { "date": "2026-07-15", "title": "Bitcoin ETF資金再平衡觀察", "category": "ETF", "impact": "medium", "explanation": "月中資金流變化可作為機構風險偏好的參考。", "assets": ["BTC"] },
-  { "date": "2026-07-18", "title": "主要Layer2代幣解鎖", "category": "Token Unlock", "impact": "medium", "explanation": "解鎖可能增加短期供給，需觀察成交量與持有人行為。", "assets": ["ETH", "L2"] },
-  { "date": "2026-07-22", "title": "SEC加密監管評論期", "category": "Regulation", "impact": "high", "explanation": "監管語氣會影響交易所、ETF與代幣發行預期。", "assets": ["BTC", "ETH", "Altcoins"] },
-  { "date": "2026-08-01", "title": "Ethereum網路升級測試窗口", "category": "ETH", "impact": "medium", "explanation": "技術升級若順利，有助改善市場對ETH生態的信心。", "assets": ["ETH"] },
-  { "date": "2026-08-12", "title": "Bitcoin下一輪減半周期進度觀察", "category": "BTC", "impact": "low", "explanation": "減半後供給效應通常需要長周期觀察，不應單獨作為短線交易理由。", "assets": ["BTC"] }
+  {
+    "date": "2026-07-17",
+    "title": "Bitcoin ETF週度資金流檢查",
+    "category": "ETF",
+    "impact": "medium",
+    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Insight Wealth weekly ETF review workflow",
+    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
+  },
+  {
+    "date": "2026-07-18",
+    "title": "主要Layer2代幣解鎖",
+    "category": "Token Unlock",
+    "impact": "medium",
+    "explanation": "解鎖可能增加短期供給，需觀察成交量與持有人行為。",
+    "assets": [
+      "ETH",
+      "L2"
+    ],
+    "source": "Manual crypto event watchlist",
+    "sourceUrl": "https://insightwealth.live/crypto-calendar"
+  },
+  {
+    "date": "2026-07-22",
+    "title": "SEC加密監管評論期",
+    "category": "Regulation",
+    "impact": "high",
+    "explanation": "監管語氣會影響交易所、ETF與代幣發行預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "Altcoins"
+    ],
+    "source": "Manual crypto event watchlist",
+    "sourceUrl": "https://insightwealth.live/crypto-calendar"
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Bitcoin ETF週度資金流檢查",
+    "category": "ETF",
+    "impact": "medium",
+    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Insight Wealth weekly ETF review workflow",
+    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
+  },
+  {
+    "date": "2026-07-29",
+    "title": "FOMC利率決議與主席記者會",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "聯準會利率決議、點陣圖或主席措辭可能影響美元流動性、風險資產估值與BTC短期波動。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "Federal Reserve FOMC calendar",
+    "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+    "date": "2026-07-30",
+    "title": "美國PCE / Personal Income公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "Personal Income and Outlays, June 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "U.S. Bureau of Economic Analysis release schedule",
+    "sourceUrl": "https://www.bea.gov/news/schedule"
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Bitcoin ETF週度資金流檢查",
+    "category": "ETF",
+    "impact": "medium",
+    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Insight Wealth weekly ETF review workflow",
+    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
+  },
+  {
+    "date": "2026-08-01",
+    "title": "Ethereum網路升級測試窗口",
+    "category": "ETH",
+    "impact": "medium",
+    "explanation": "技術升級若順利，有助改善市場對ETH生態的信心。",
+    "assets": [
+      "ETH"
+    ],
+    "source": "Manual crypto event watchlist",
+    "sourceUrl": "https://insightwealth.live/crypto-calendar"
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Bitcoin ETF週度資金流檢查",
+    "category": "ETF",
+    "impact": "medium",
+    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Insight Wealth weekly ETF review workflow",
+    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Bitcoin下一輪減半周期進度觀察",
+    "category": "BTC",
+    "impact": "low",
+    "explanation": "減半後供給效應通常需要長周期觀察，不應單獨作為短線交易理由。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Manual crypto event watchlist",
+    "sourceUrl": "https://insightwealth.live/crypto-calendar"
+  },
+  {
+    "date": "2026-08-12",
+    "title": "美國CPI公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "July 2026 CPI在美東時間8:30公布。若通膨高於預期，可能提高利率壓力；若低於預期，可能改善風險資產情緒。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "Altcoins"
+    ],
+    "source": "BLS CPI release schedule",
+    "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm"
+  },
+  {
+    "date": "2026-08-26",
+    "title": "美國PCE / Personal Income公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "Personal Income and Outlays, July 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "U.S. Bureau of Economic Analysis release schedule",
+    "sourceUrl": "https://www.bea.gov/news/schedule"
+  },
+  {
+    "date": "2026-09-11",
+    "title": "美國CPI公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "August 2026 CPI在美東時間8:30公布。若通膨高於預期，可能提高利率壓力；若低於預期，可能改善風險資產情緒。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "Altcoins"
+    ],
+    "source": "BLS CPI release schedule",
+    "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm"
+  },
+  {
+    "date": "2026-09-16",
+    "title": "FOMC利率決議與主席記者會",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "聯準會利率決議、點陣圖或主席措辭可能影響美元流動性、風險資產估值與BTC短期波動。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "Federal Reserve FOMC calendar",
+    "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+    "date": "2026-09-30",
+    "title": "美國PCE / Personal Income公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "Personal Income and Outlays, August 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "U.S. Bureau of Economic Analysis release schedule",
+    "sourceUrl": "https://www.bea.gov/news/schedule"
+  },
+  {
+    "date": "2026-10-14",
+    "title": "美國CPI公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "September 2026 CPI在美東時間8:30公布。若通膨高於預期，可能提高利率壓力；若低於預期，可能改善風險資產情緒。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "Altcoins"
+    ],
+    "source": "BLS CPI release schedule",
+    "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm"
+  },
+  {
+    "date": "2026-10-28",
+    "title": "FOMC利率決議與主席記者會",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "聯準會利率決議、點陣圖或主席措辭可能影響美元流動性、風險資產估值與BTC短期波動。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "Federal Reserve FOMC calendar",
+    "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+    "date": "2026-10-29",
+    "title": "美國PCE / Personal Income公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "Personal Income and Outlays, September 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "U.S. Bureau of Economic Analysis release schedule",
+    "sourceUrl": "https://www.bea.gov/news/schedule"
+  },
+  {
+    "date": "2026-11-10",
+    "title": "美國CPI公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "October 2026 CPI在美東時間8:30公布。若通膨高於預期，可能提高利率壓力；若低於預期，可能改善風險資產情緒。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "Altcoins"
+    ],
+    "source": "BLS CPI release schedule",
+    "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "美國PCE / Personal Income公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "Personal Income and Outlays, October 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "U.S. Bureau of Economic Analysis release schedule",
+    "sourceUrl": "https://www.bea.gov/news/schedule"
+  },
+  {
+    "date": "2026-12-09",
+    "title": "FOMC利率決議與主席記者會",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "聯準會利率決議、點陣圖或主席措辭可能影響美元流動性、風險資產估值與BTC短期波動。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "Federal Reserve FOMC calendar",
+    "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+    "date": "2026-12-23",
+    "title": "美國PCE / Personal Income公布",
+    "category": "Macro",
+    "impact": "high",
+    "explanation": "Personal Income and Outlays, November 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
+    "assets": [
+      "BTC",
+      "ETH",
+      "US Stocks"
+    ],
+    "source": "U.S. Bureau of Economic Analysis release schedule",
+    "sourceUrl": "https://www.bea.gov/news/schedule"
+  }
 ]

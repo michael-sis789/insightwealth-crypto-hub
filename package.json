@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "update:etf": "node scripts/update-etf.mjs",
+    "update:events": "node scripts/update-events.mjs",
     "update:onchain": "node scripts/update-onchain.mjs",
     "update:youtube": "node scripts/update-youtube-videos.mjs",
     "update:daily-brief": "node scripts/update-daily-brief.mjs",
