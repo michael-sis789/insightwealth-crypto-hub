@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-07-18",
-    "title": "主要Layer2代幣解鎖",
-    "category": "Token Unlock",
-    "impact": "medium",
-    "explanation": "解鎖可能增加短期供給，需觀察成交量與持有人行為。",
-    "assets": [
-      "ETH",
-      "L2"
-    ],
-    "source": "Manual crypto event watchlist",
-    "sourceUrl": "https://insightwealth.live/crypto-calendar"
-  },
-  {
     "date": "2026-07-22",
     "title": "SEC加密監管評論期",
     "category": "Regulation",
