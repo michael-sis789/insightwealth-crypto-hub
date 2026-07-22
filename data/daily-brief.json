@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "marketSentiment": "Bullish",
-  "bullScore": 98,
-  "summary": "今日BTC市場偏多，Bull Score為98/100。BTC現貨約$65,425，24h變化+1.23%，價格短線偏強；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
+  "bullScore": 93,
+  "summary": "今日BTC市場偏多，Bull Score為93/100。BTC現貨約$66,235，24h變化+1.24%，價格短線偏強；ETF資金流顯示+$250M，需要觀察是否延續。長期投資者可把重點放在DCA紀律、風險控制與避免追漲殺跌。",
   "news": [
     {
-      "headline": "BTC現貨約$65,425，24h變化+1.23%",
+      "headline": "BTC現貨約$66,235，24h變化+1.24%",
       "source": "CoinGecko API",
-      "summary": "BTC 7日變化為+4.72%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
+      "summary": "BTC 7日變化為+2.50%。短線價格只是一個溫度計，長期投資者更應觀察是否配合ETF資金流與市場情緒改善。",
       "whyItMatters": "價格是最直接的市場訊號，但單獨使用容易追漲殺跌，必須和情緒、資金流與槓桿資料一起看。",
       "btcImpact": "中性偏多",
       "ethImpact": "中性",
       "altcoinImpact": "分化"
     },
     {
-      "headline": "Fear & Greed為25，分類：Extreme Fear",
+      "headline": "Fear & Greed為33，分類：Fear",
       "source": "Alternative.me Fear & Greed API",
-      "summary": "市場處於恐慌區，長期投資者可更重視分批與現金流管理。",
+      "summary": "市場情緒未進入極端區間，較適合按原定策略執行DCA。",
       "whyItMatters": "情緒指標可以幫助投資者避免在極端恐慌或極端貪婪時做出衝動決策。",
-      "btcImpact": "長期偏多",
+      "btcImpact": "中性",
       "ethImpact": "中性",
       "altcoinImpact": "分化"
     },
@@ -41,9 +41,9 @@
       "altcoinImpact": "高槓桿幣種波動更大"
     },
     {
-      "headline": "鏈上指標：MVRV 1.2434，NUPL 0.1958",
+      "headline": "鏈上指標：MVRV 1.2682，NUPL 0.2115",
       "source": "BGeometrics",
-      "summary": "Puell Multiple目前為0.7447。鏈上資料以日更或人工確認為主，重點是觀察長期估值溫度，不是短線追單訊號。",
+      "summary": "Puell Multiple目前為0.7208。鏈上資料以日更或人工確認為主，重點是觀察長期估值溫度，不是短線追單訊號。",
       "whyItMatters": "MVRV、NUPL與Puell可幫助判斷BTC週期溫度，避免只看價格做決策。",
       "btcImpact": "長期參考",
       "ethImpact": "間接參考",
