@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-07-23",
   "label": "Updated daily / manually verified",
   "notes": "Daily Bitcoin on-chain indicators. Never replace unavailable values with mock data.",
   "indicators": {
     "mvrv": {
-      "value": 1.2682,
-      "date": "2026-07-21",
+      "value": 1.2582,
+      "date": "2026-07-22",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/mvrv/last",
       "updateFrequency": "Updated daily",
       "status": "Neutral",
-      "explanation": "MVRV衡量BTC市值相對已實現市值的位置。目前讀數為1.2682，用於判斷長期估值溫度，不適合單獨作為短線交易訊號。"
+      "explanation": "MVRV衡量BTC市值相對已實現市值的位置。目前讀數為1.2582，用於判斷長期估值溫度，不適合單獨作為短線交易訊號。"
     },
     "nupl": {
-      "value": 0.2115,
-      "date": "2026-07-21",
+      "value": 0.2052,
+      "date": "2026-07-22",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/nupl/last",
       "updateFrequency": "Updated daily",
       "status": "Bullish",
-      "explanation": "NUPL衡量市場整體未實現盈虧。目前讀數為0.2115，越高代表獲利盤越多，越低代表市場壓力更明顯。"
+      "explanation": "NUPL衡量市場整體未實現盈虧。目前讀數為0.2052，越高代表獲利盤越多，越低代表市場壓力更明顯。"
     },
     "puell": {
-      "value": 0.7208,
-      "date": "2026-07-21",
+      "value": 0.6009,
+      "date": "2026-07-22",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/puell-multiple/last",
       "updateFrequency": "Updated daily",
-      "status": "Neutral",
-      "explanation": "Puell Multiple衡量礦工日收入相對一年平均值。目前讀數為0.7208，用於觀察礦工收入與週期壓力。"
+      "status": "Bullish",
+      "explanation": "Puell Multiple衡量礦工日收入相對一年平均值。目前讀數為0.6009，用於觀察礦工收入與週期壓力。"
     },
     "realizedPrice": {
-      "value": 52477.75,
-      "date": "2026-07-21",
+      "value": 52471.83,
+      "date": "2026-07-22",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/realized-price/last",
       "updateFrequency": "Updated daily",
       "status": "Neutral",
-      "explanation": "Realized Price代表鏈上成本基礎的近似值。目前讀數為52477.75美元，作為長期估值背景資料。"
+      "explanation": "Realized Price代表鏈上成本基礎的近似值。目前讀數為52471.83美元，作為長期估值背景資料。"
     }
   }
 }

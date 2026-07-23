@@ -1,19 +1,5 @@
 [
   {
-    "date": "2026-07-22",
-    "title": "SEC加密監管評論期",
-    "category": "Regulation",
-    "impact": "high",
-    "explanation": "監管語氣會影響交易所、ETF與代幣發行預期。",
-    "assets": [
-      "BTC",
-      "ETH",
-      "Altcoins"
-    ],
-    "source": "Manual crypto event watchlist",
-    "sourceUrl": "https://insightwealth.live/crypto-calendar"
-  },
-  {
     "date": "2026-07-24",
     "title": "Bitcoin ETF週度資金流檢查",
     "category": "ETF",
