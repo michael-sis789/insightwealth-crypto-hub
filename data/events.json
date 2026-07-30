@@ -1,19 +1,5 @@
 [
   {
-    "date": "2026-07-29",
-    "title": "FOMC利率決議與主席記者會",
-    "category": "Macro",
-    "impact": "high",
-    "explanation": "聯準會利率決議、點陣圖或主席措辭可能影響美元流動性、風險資產估值與BTC短期波動。",
-    "assets": [
-      "BTC",
-      "ETH",
-      "US Stocks"
-    ],
-    "source": "Federal Reserve FOMC calendar",
-    "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-  },
-  {
     "date": "2026-07-30",
     "title": "美國PCE / Personal Income公布",
     "category": "Macro",
