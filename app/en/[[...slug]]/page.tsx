@@ -95,6 +95,46 @@ const pageCopy: Record<string, { title: string; description: string; heading: st
     intro: "We are an independent research platform focused on Bitcoin, crypto, AI, long-term investing and data-driven analysis. We do not provide financial advice.",
     faq: [{ q: "What is the goal of this website?", a: "The goal is to help long-term BTC investors understand what matters today using clear data and risk-aware tools." }]
   },
+  "/author": {
+    title: "Author and Research Team - Insight Wealth",
+    description: "Learn who maintains Insight Wealth Crypto Hub, how the research workflow works, and how YouTube and website content are connected.",
+    heading: "Author and Research Team",
+    intro: "Insight Wealth is maintained as an independent Bitcoin, crypto, AI and long-term investing research platform. The site supports the Insight Wealth YouTube workflow with sourced data, daily briefs and risk-aware tools.",
+    faq: [
+      { q: "Who maintains the website?", a: "Insight Wealth maintains the website through an independent research and content workflow. Contact: hello@insightwealth.live." },
+      { q: "Does the author provide personal investment advice?", a: "No. The website provides educational information and does not provide personalized buy or sell recommendations." }
+    ]
+  },
+  "/editorial-policy": {
+    title: "Editorial Policy - Insight Wealth Crypto Hub",
+    description: "Read Insight Wealth's editorial standards for original analysis, sources, risk warnings, automation, and financial content quality.",
+    heading: "Editorial Policy",
+    intro: "Our editorial standard is simple: every page should help a long-term Bitcoin investor understand what matters today, with clear sources, limitations, and risk context. We do not publish hype, guaranteed-profit claims, or fake real-time data.",
+    faq: [
+      { q: "How does Insight Wealth avoid low-value content?", a: "Pages include original explanations, source labels, methodology, limitations, FAQ sections, internal links and risk context instead of repeating generic market headlines." },
+      { q: "Is automation used?", a: "Yes. Automation refreshes data caches and structured daily briefs, but pages must still disclose sources, update times and limitations." }
+    ]
+  },
+  "/methodology": {
+    title: "Data Methodology - Bitcoin Price, ETF Flow, On-chain Metrics and Bull Score",
+    description: "Understand how Insight Wealth updates BTC price, Fear & Greed, funding, ETF flow, on-chain indicators, crypto calendar and Bull Score.",
+    heading: "Data Methodology",
+    intro: "This page explains how Insight Wealth collects, caches and labels market data. The goal is to make every number understandable: source, update frequency, limitation and intended use.",
+    faq: [
+      { q: "Does the website call external APIs for every visitor?", a: "No. The site uses local JSON and server-side caches so pages load faster and free APIs are not abused." },
+      { q: "What happens when a data source fails?", a: "The site should show unavailable, stale or manually verified status instead of replacing failed data with fake numbers." }
+    ]
+  },
+  "/sources": {
+    title: "Data Sources - Insight Wealth Crypto Hub",
+    description: "Review the data sources used by Insight Wealth, including CoinGecko, Alternative.me, Binance, BGeometrics, Federal Reserve, BEA and manual ETF flow JSON.",
+    heading: "Data Sources",
+    intro: "Insight Wealth uses public APIs, official calendars, manually verified datasets and local JSON caches. This page lists the main source categories and explains how each one should be interpreted.",
+    faq: [
+      { q: "Are all data sources real time?", a: "No. Price and funding are closer to real time, while ETF flow, on-chain indicators and calendar items are daily or manually verified." },
+      { q: "Why use local JSON files?", a: "Local JSON improves speed, reduces API limits and allows source/date labels to remain visible to users and search engines." }
+    ]
+  },
   "/contact": {
     title: "Contact Insight Wealth",
     description: "Contact Insight Wealth for website, research, content and collaboration inquiries.",

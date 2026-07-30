@@ -41,6 +41,10 @@ export const localizedRoutes = [
   "/crypto-calendar",
   "/daily-crypto-brief",
   "/about",
+  "/author",
+  "/editorial-policy",
+  "/methodology",
+  "/sources",
   "/disclaimer",
   "/privacy",
   "/contact"

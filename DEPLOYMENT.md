@@ -434,3 +434,25 @@ If CLI deploy fails with `JSONHTTPError: Forbidden`:
 - Custom domain: `insightwealth.live`
 - Domain alias: `www.insightwealth.live`
 - HTTPS: enabled and forced
+## Daily Automation
+
+GitHub Actions runs the website data updater every day at `23:00 UTC`, which is `07:00 Asia/Kuala_Lumpur`.
+
+The scheduled workflow updates:
+
+- BTC historical prices
+- on-chain indicators
+- ETF daily marker
+- crypto event calendar
+- live market cache and Bull Score
+- Daily Crypto Brief
+- latest YouTube video metadata
+
+Then it runs:
+
+```bash
+npm run lint
+npm run build
+```
+
+If data changed, GitHub Actions commits the JSON update to `main`. Netlify must be connected to GitHub auto deploy for the live site to publish the update.

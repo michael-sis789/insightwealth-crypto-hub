@@ -28,6 +28,21 @@ const items = [
     title: "Bitcoin DCA Calculator",
     href: "/btc-dca-calculator",
     description: "使用本地快取歷史價格回測 BTC 定投策略。"
+  },
+  {
+    title: "洞見財富編輯政策",
+    href: "/editorial-policy",
+    description: "說明本站的內容標準、資料來源、原創分析、風險提示與更新流程。"
+  },
+  {
+    title: "洞見財富資料方法論",
+    href: "/methodology",
+    description: "說明BTC價格、ETF Flow、鏈上資料、事件日曆與Bull Score的資料架構。"
+  },
+  {
+    title: "洞見財富資料來源目錄",
+    href: "/sources",
+    description: "列出Insight Wealth常用市場資料、宏觀日曆、鏈上資料與本地JSON快取來源。"
   }
 ];
 
