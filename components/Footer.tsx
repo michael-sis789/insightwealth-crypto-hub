@@ -28,11 +28,15 @@ export function Footer() {
           <Link href={localizedPath("/editorial-policy", language)}>{language === "en" ? "Editorial Policy" : "編輯政策"}</Link>
           <Link href={localizedPath("/contact", language)}>{language === "en" ? "Contact" : "聯絡"}</Link>
           <Link href={localizedPath("/daily-crypto-brief", language)}>{language === "en" ? "Daily Crypto Brief" : "每日簡報"}</Link>
+          <Link href={localizedPath("/bitcoin-fear-greed-index", language)}>{language === "en" ? "Fear & Greed Guide" : "恐懼貪婪教學"}</Link>
           <a href="https://youtube.com/@9insightwealth" target="_blank" rel="noreferrer">{language === "en" ? "YouTube Channel" : "YouTube 頻道"}</a>
         </div>
         <div className="grid gap-2 text-sm text-slate-400">
           <Link href={localizedPath("/methodology", language)}>{language === "en" ? "Methodology" : "資料方法論"}</Link>
           <Link href={localizedPath("/sources", language)}>{language === "en" ? "Sources" : "資料來源"}</Link>
+          <Link href={localizedPath("/bitcoin-mvrv", language)}>{language === "en" ? "MVRV Guide" : "MVRV教學"}</Link>
+          <Link href={localizedPath("/bitcoin-nupl", language)}>{language === "en" ? "NUPL Guide" : "NUPL教學"}</Link>
+          <Link href={localizedPath("/bitcoin-puell-multiple", language)}>{language === "en" ? "Puell Guide" : "Puell教學"}</Link>
           <Link href={localizedPath("/disclaimer", language)}>{language === "en" ? "Disclaimer" : "免責聲明"}</Link>
           <Link href={localizedPath("/privacy", language)}>{language === "en" ? "Privacy Policy" : "隱私政策"}</Link>
           <a href="/sitemap.xml">Sitemap</a>

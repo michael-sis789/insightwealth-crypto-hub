@@ -388,6 +388,92 @@ export const seoPages: SeoPage[] = [
         { q: "Should today's price decide my DCA?", a: "No. DCA should consider long-term cash flow, valuation and risk tolerance." }
       ]
     }
+  },
+  {
+    slug: "bitcoin-nupl",
+    zh: {
+      title: "Bitcoin NUPL - BTC未實現盈虧鏈上指標教學",
+      description: "了解Bitcoin NUPL如何衡量BTC網路未實現盈虧，判斷市場恐慌、信心、樂觀與過熱階段。",
+      h1: "Bitcoin NUPL 指標",
+      summary: "NUPL用未實現利潤與虧損觀察BTC持有人整體盈虧狀態，適合長期投資者理解市場週期溫度，而不是用來做短線買賣。",
+      lastUpdated: "2026-07-30",
+      dataSources: ["BGeometrics Bitcoin Data API / manual verification", "Coin Metrics realized cap concept", "Local on-chain JSON cache: data/onchain-indicators.json"],
+      keyTakeaways: ["NUPL偏高通常代表市場獲利較多，追高風險上升。", "NUPL偏低可能代表市場壓力或投資者投降，但不保證見底。", "NUPL必須搭配MVRV、ETF Flow、Fear & Greed與DCA計畫閱讀。"],
+      sections: [
+        { heading: "NUPL是什麼？", body: ["NUPL代表Net Unrealized Profit/Loss，中文可以理解為淨未實現盈虧。它試圖衡量整個Bitcoin網路中，持有人目前帳面上是處於獲利還是虧損狀態。當市值高於實現市值越多，NUPL通常越高；當市場價格接近或低於許多持有人的成本區，NUPL就會下降。", "NUPL不是用來回答明天BTC會漲還是跌，而是回答市場整體心理位置。高NUPL常出現在牛市後段或快速上漲後，因為大量持有人處於獲利狀態，潛在獲利了結壓力較高。低NUPL常出現在熊市壓力期，投資者信心較弱，但長期估值可能開始變得更值得研究。"] },
+        { heading: "如何解讀NUPL區間？", body: ["傳統鏈上分析常把NUPL分成恐慌、希望、樂觀、信念與狂熱等階段。這些名稱有助於理解市場心理，但不應被當成機械交易規則。不同週期、宏觀利率環境、ETF資金流與市場結構都可能改變NUPL的有效區間。", "對長期BTC投資者來說，NUPL最有用的方式是觀察方向與極端值。如果NUPL快速上升，同時Fear & Greed進入極端貪婪、Funding Rate偏高，就要避免因短期上漲而追高。如果NUPL低迷但ETF流出開始減弱，DCA投資者可以檢查自己的現金流與分批投入規則。"] },
+        { heading: "NUPL與DCA的關係", body: ["DCA策略的目標是讓投資者在不同市場環境中持續累積，而不是依靠一次判斷押注頂底。NUPL可以幫助投資者調整DCA節奏：當市場獲利過熱時，維持基礎定投或降低追加；當市場壓力較大但基本資料沒有惡化時，維持定投紀律可能比恐慌賣出更合理。", "真正重要的是不要把NUPL單獨使用。若NUPL偏低但價格仍跌破重要趨勢、ETF持續流出、宏觀流動性收緊，就應該承認市場仍有風險。若NUPL偏高但ETF需求強勁、價格趨勢穩定，也不代表市場一定立刻反轉。"] },
+        { heading: "資料更新與限制", body: ["NUPL需要可靠的實現市值或相關鏈上模型。免費資料來源不一定穩定，因此Insight Wealth會以每日或人工確認方式更新，並在卡片上顯示Last updated、Source與資料狀態。如果資料超過7天，應視為Stale data。", "本站不會把過期資料包裝成即時數字。若來源暫時不可用，頁面應顯示Coming Soon或Data temporarily unavailable。這樣做雖然保守，但比用假數字提高頁面完整度更符合投資者利益與AdSense內容品質。"] }
+      ],
+      faq: [
+        { q: "NUPL越高代表越看多嗎？", a: "不一定。NUPL高代表市場帳面獲利較多，可能是強勢，也可能代表獲利了結風險升高。" },
+        { q: "NUPL低於0是否代表必然見底？", a: "不是。低NUPL代表壓力較大或許多持有人虧損，但市場仍可能繼續下跌。" },
+        { q: "本站NUPL是即時資料嗎？", a: "不是。若無可靠免費即時API，本站會使用每日或人工確認資料並標示來源與日期。" }
+      ]
+    },
+    en: {
+      title: "Bitcoin NUPL - BTC Net Unrealized Profit/Loss Explained",
+      description: "Learn how Bitcoin NUPL measures unrealized profit and loss across BTC holders and how it helps long-term investors read cycle risk.",
+      h1: "Bitcoin NUPL",
+      summary: "NUPL measures the unrealized profit and loss position of the Bitcoin network. It is useful for cycle context and investor psychology, not short-term trade calls.",
+      lastUpdated: "2026-07-30",
+      dataSources: ["BGeometrics Bitcoin Data API / manual verification", "Coin Metrics realized cap concept", "Local on-chain JSON cache: data/onchain-indicators.json"],
+      keyTakeaways: ["High NUPL often means more holders are in profit and chasing risk can rise.", "Low NUPL can indicate stress or capitulation, but it does not guarantee a bottom.", "NUPL should be read with MVRV, ETF flow, Fear & Greed and a DCA plan."],
+      sections: [
+        { heading: "What is NUPL?", body: ["NUPL stands for Net Unrealized Profit/Loss. It attempts to measure whether the Bitcoin network, in aggregate, is sitting on unrealized profit or unrealized loss. When market value is far above realized value, NUPL tends to rise. When price is close to or below many holders' cost basis, NUPL falls.", "NUPL is not designed to predict tomorrow's BTC price. It is better understood as a map of investor psychology. High NUPL often appears after strong rallies or in later bull-market conditions, when many holders have profit and potential selling pressure can increase. Low NUPL often appears during bear-market stress, when confidence is weak but long-term valuation may become more interesting." ] },
+        { heading: "How to interpret NUPL zones", body: ["On-chain analysts often describe NUPL zones as capitulation, hope, optimism, belief and euphoria. These labels are useful for psychology, but they should not become mechanical trading rules. Different cycles, interest-rate regimes, ETF flows and market structure can change how each zone behaves.", "For long-term BTC investors, the most practical use is to watch direction and extremes. If NUPL rises quickly while Fear & Greed is extremely greedy and funding is high, chasing risk increases. If NUPL is depressed while ETF outflows are slowing, DCA investors can review cash flow and staged contribution rules." ] },
+        { heading: "How NUPL connects with DCA", body: ["The purpose of DCA is to keep accumulation rule-based across different market environments. NUPL can help adjust pace: when unrealized profits are overheated, maintain base DCA or reduce extra buying; when market stress is high but core data has not deteriorated, maintaining discipline can be more rational than panic selling.", "NUPL should never be used alone. If NUPL is low but price trend is weak, ETF outflows continue and liquidity tightens, risk remains. If NUPL is high but ETF demand is strong and price structure remains healthy, it does not guarantee an immediate reversal." ] },
+        { heading: "Data updates and limitations", body: ["NUPL requires reliable realized value or related on-chain models. Free sources are not always stable, so Insight Wealth updates it daily or manually verifies it and displays last updated date, source and status on each card. Data older than seven days should be treated as stale.", "The site does not present stale values as live data. If a source is unavailable, the page should show Coming Soon or Data temporarily unavailable. That is more conservative, but it is better for investors and stronger for publisher quality than filling the page with fake numbers." ] }
+      ],
+      faq: [
+        { q: "Is higher NUPL always bullish?", a: "No. High NUPL means more unrealized profit. It can reflect strength, but it can also raise profit-taking risk." },
+        { q: "Does NUPL below zero guarantee a bottom?", a: "No. It shows stress or broad unrealized loss, but the market can continue falling." },
+        { q: "Is Insight Wealth NUPL real time?", a: "No. Without a reliable free real-time API, it is daily or manually verified data with source and date labels." }
+      ]
+    }
+  },
+  {
+    slug: "bitcoin-puell-multiple",
+    zh: {
+      title: "Bitcoin Puell Multiple - BTC礦工收入週期指標",
+      description: "了解Bitcoin Puell Multiple如何用礦工收入判斷BTC週期壓力、礦工賣壓、低估區與過熱區。",
+      h1: "Bitcoin Puell Multiple 指標",
+      summary: "Puell Multiple從礦工收入角度觀察Bitcoin週期，適合用來理解礦工壓力與市場過熱程度，但不應單獨作為買賣訊號。",
+      lastUpdated: "2026-07-30",
+      dataSources: ["BGeometrics Bitcoin Data API / manual verification", "Blockchain.com mining data reference", "Local on-chain JSON cache: data/onchain-indicators.json"],
+      keyTakeaways: ["Puell偏低常代表礦工收入壓力較大。", "Puell偏高可能代表市場收入與價格週期過熱。", "減半後Puell解讀需要搭配哈希率、難度與價格趨勢。"],
+      sections: [
+        { heading: "Puell Multiple是什麼？", body: ["Puell Multiple比較Bitcoin礦工每日美元收入與其長期平均收入。礦工是BTC供給端的重要參與者，因為他們需要支付電力、設備與營運成本。當礦工收入低於長期平均，市場可能處於壓力區；當礦工收入遠高於平均，市場可能進入週期偏熱階段。", "這個指標的價值在於提供供給端視角。很多投資者只看價格與需求，但礦工收入、哈希率與難度會影響礦工行為。Puell Multiple讓長期投資者看到BTC生產者的經濟狀態。"] },
+        { heading: "如何解讀礦工壓力？", body: ["當Puell Multiple偏低時，礦工收入可能承壓，弱勢礦工需要關機、出售BTC或尋求融資。歷史上，這類壓力區有時接近週期低位，但不是精準底部。價格可以在低Puell環境中持續盤整，宏觀流動性與市場信心仍然重要。", "當Puell Multiple偏高時，礦工收入相對歷史均值很強。這可能代表牛市動能，也可能代表市場進入較高風險區。若同時出現極端貪婪、高MVRV、高Funding與價格急漲，追高風險會明顯上升。"] },
+        { heading: "減半後要小心什麼？", body: ["Bitcoin Halving會直接降低區塊補貼，因此Puell Multiple在減半前後的比較需要小心。單純把減半後收入下降解讀成礦工危機，可能忽略交易費、價格上升與礦工效率改善。相反，若減半後價格沒有跟上、難度仍高，礦工壓力可能逐步累積。", "因此本站會把Puell放在Advanced Analysis區，而不是首頁五個核心指標之一。對每日決策來說，BTC Price、Fear & Greed、ETF Flow、Bull Score與DCA Opinion更直接；Puell則提供週期背景。"] },
+        { heading: "如何與DCA一起使用？", body: ["長期DCA投資者可以把低Puell視為值得研究的壓力環境，但仍要分批。當Puell偏低、Fear & Greed恐慌、MVRV不高且ETF流出減弱時，維持DCA紀律可能比停止投入更合理。當Puell偏高且多項風險指標同步過熱時，則應檢查倉位是否過大。", "Puell不會告訴你今天一定該買或賣。它的作用是提醒投資者BTC供給端的週期壓力，幫助你避免只用價格做判斷。"] }
+      ],
+      faq: [
+        { q: "Puell Multiple低代表礦工投降嗎？", a: "可能代表礦工壓力升高，但需要搭配哈希率、難度、價格與鏈上流量確認。" },
+        { q: "Puell高代表要賣BTC嗎？", a: "不一定。它可能代表市場強勢，也可能代表過熱，需要搭配其他指標。" },
+        { q: "Puell適合每日交易嗎？", a: "不適合。它是週期與礦工收入背景指標。" }
+      ]
+    },
+    en: {
+      title: "Bitcoin Puell Multiple - BTC Miner Revenue Cycle Indicator",
+      description: "Learn how the Bitcoin Puell Multiple uses miner revenue to evaluate BTC cycle pressure, miner stress, undervaluation and overheating risk.",
+      h1: "Bitcoin Puell Multiple",
+      summary: "Puell Multiple reads the Bitcoin cycle from the miner revenue side. It helps explain miner stress and overheating, but it should not be used alone as a buy or sell signal.",
+      lastUpdated: "2026-07-30",
+      dataSources: ["BGeometrics Bitcoin Data API / manual verification", "Blockchain.com mining data reference", "Local on-chain JSON cache: data/onchain-indicators.json"],
+      keyTakeaways: ["Low Puell can indicate miner revenue stress.", "High Puell can suggest overheated cycle conditions.", "After halvings, Puell should be read with hash rate, difficulty and price trend."],
+      sections: [
+        { heading: "What is Puell Multiple?", body: ["Puell Multiple compares Bitcoin miners' daily USD revenue with its long-term average. Miners are important supply-side participants because they must pay for electricity, hardware and operations. When miner revenue is far below its long-term average, the market may be under stress. When revenue is far above average, the cycle may be hotter.", "The indicator is valuable because it gives investors a supply-side view. Many investors focus only on price and demand, but miner revenue, hash rate and difficulty can affect miner behavior. Puell Multiple shows the economic condition of Bitcoin producers." ] },
+        { heading: "How to read miner stress", body: ["When Puell is low, miner revenue may be under pressure. Weaker miners may shut down, sell BTC or seek financing. Historically, these stress zones sometimes appear near cycle lows, but they are not precise bottoms. Price can remain weak while Puell is low, and macro liquidity still matters.", "When Puell is high, miner revenue is strong relative to history. That can reflect bull-market strength, but it can also indicate a higher-risk zone. If extreme greed, high MVRV, high funding and rapid price appreciation appear together, chasing risk increases." ] },
+        { heading: "Why halvings matter", body: ["Bitcoin halvings directly reduce block subsidy, so Puell comparisons around halving periods require care. Reading lower post-halving revenue as an automatic miner crisis can ignore transaction fees, price appreciation and efficiency improvements. On the other hand, if price does not rise and difficulty stays high, miner pressure can build.", "That is why Insight Wealth treats Puell as advanced analysis rather than one of the five core daily indicators. BTC Price, Fear & Greed, ETF Flow, Bull Score and DCA Opinion are more direct for daily decisions. Puell provides cycle background." ] },
+        { heading: "How to use it with DCA", body: ["Long-term DCA investors can treat low Puell as a stress environment worth studying, but still stage entries. If Puell is low, Fear & Greed is fearful, MVRV is not overheated and ETF outflows are easing, maintaining DCA discipline may be more rational than stopping. If Puell is high and several risk indicators are overheated, review position size.", "Puell does not tell you to buy or sell today. It reminds investors to consider Bitcoin's supply-side economics instead of judging the market from price alone." ] }
+      ],
+      faq: [
+        { q: "Does low Puell mean miner capitulation?", a: "It can indicate higher miner stress, but hash rate, difficulty, price and flows should confirm the context." },
+        { q: "Does high Puell mean sell BTC?", a: "No. It can reflect strength or overheating and must be checked with other indicators." },
+        { q: "Is Puell useful for daily trading?", a: "No. It is better for cycle and miner revenue context." }
+      ]
+    }
   }
 ];
 
@@ -428,6 +514,57 @@ export const newsArticles: NewsArticle[] = [
         { q: "Does Strategy's 12.5B framework mean immediate BTC selling?", a: "No. It is better read as capital management capacity or authorization space. Actual transactions require later disclosure." },
         { q: "Is the GPT-5.6 narrative automatically bullish for crypto?", a: "No. AI narratives can support risk appetite, but unverified information should not be used as an investment basis." },
         { q: "Is today an all-in BTC setup?", a: "No. Insight Wealth emphasizes DCA, risk management and long-term discipline." }
+      ]
+    }
+  },
+  {
+    slug: "2026-07-30-google-ai-russia-crypto-regulation",
+    date: "2026-07-30",
+    videoUrl: "https://www.youtube.com/embed/K-oTXl2nRQ0",
+    zh: {
+      title: "歐盟Google Android AI入口、俄羅斯加密法案與BTC投資者每日觀察",
+      description: "洞見財富每日影片文章：整理歐盟要求Google開放Android AI入口、俄羅斯杜馬推進加密法案，以及BTC長期投資者今天應關注的風險與DCA觀點。",
+      h1: "歐盟Google Android AI入口、俄羅斯加密法案與BTC市場觀察",
+      summary: "本篇整理洞見財富2026-07-30每日影片重點。今天的主軸不是單一幣種喊單，而是AI入口競爭、歐盟平台監管、俄羅斯加密法案與BTC核心數據如何共同影響風險資產情緒。對長期BTC投資者來說，最重要的仍是價格、Fear & Greed、ETF Flow、Bull Score與DCA紀律。",
+      keyPoints: [
+        "歐盟要求Google開放Android AI入口，反映AI分發入口正在成為新一輪平台監管焦點。",
+        "AI入口變化可能影響大型科技公司估值與市場風險偏好，但不等於加密市場會立即單邊上漲。",
+        "俄羅斯杜馬推進加密相關法案，代表監管框架仍在全球不同地區快速演變。",
+        "政策新聞需要區分方向、落地時間與實際資金流，不應只看標題就追漲殺跌。",
+        "長期BTC投資者今天仍應優先檢查BTC價格、情緒、ETF流向、Bull Score與DCA計畫。"
+      ],
+      marketImpact: "今天的市場影響主要來自兩條線：第一是AI入口監管，可能影響科技股與風險資產估值；第二是加密法規演進，可能影響交易所、礦工、支付與機構參與預期。這些因素通常不會立即形成單一方向，但會改變市場對流動性、監管風險與長期採用的理解。",
+      btcImpact: "BTC受到宏觀流動性、ETF需求與監管預期共同影響。若AI與科技股情緒改善，風險偏好可能支撐BTC；若監管新聞造成不確定性，短線波動可能增加。真正值得追蹤的是ETF Flow是否確認需求，以及Bull Score是否與價格方向一致。",
+      ethImpact: "ETH同樣受風險偏好影響，但它對應用層、DeFi、AI代理與鏈上活動的敏感度更高。政策與平台入口競爭可能間接影響市場對Web3應用的想像，但仍需要鏈上數據與資金流確認。",
+      riskWarning: "本內容僅供教育與資訊用途，不構成財務建議。政策、AI與加密新聞容易被市場短線放大，投資者應自行查證來源，避免因單日標題all-in、追高或恐慌賣出。",
+      dcaOpinion: "今日DCA觀點是維持紀律、不要因新聞標題改變整個策略。若BTC價格短線反彈但ETF資金仍未確認，追加資金應拆分；若市場回落但核心指標沒有惡化，長期投資者可按原定節奏執行。投資靠紀律，不靠運氣；財富靠堅持，不靠奇蹟。",
+      faq: [
+        { q: "AI入口監管會直接推動BTC上漲嗎？", a: "不一定。它可能影響風險偏好與科技股情緒，但BTC仍需要ETF資金、流動性與市場結構確認。" },
+        { q: "俄羅斯加密法案是否代表全球監管利多？", a: "不能簡化成利多或利空。不同國家的政策目的、限制與落地方式不同，應看具體條文與市場反應。" },
+        { q: "今天適合改變DCA計畫嗎？", a: "除非你的現金流、風險承受能力或長期目標改變，單日新聞通常不應改寫DCA計畫。" }
+      ]
+    },
+    en: {
+      title: "EU Google Android AI Access, Russia Crypto Regulation and BTC Daily Investor View",
+      description: "Insight Wealth daily video article covering EU pressure on Google Android AI access, Russia crypto legislation and the BTC data long-term investors should watch today.",
+      h1: "EU Google Android AI Access, Russia Crypto Regulation and BTC Market View",
+      summary: "This article summarizes the 2026-07-30 Insight Wealth daily video. The focus is not a coin call. It connects AI distribution, EU platform regulation, Russia's crypto legislation and core BTC market data into one daily decision framework for long-term investors.",
+      keyPoints: [
+        "EU pressure on Google to open Android AI access shows that AI distribution is becoming a major platform-regulation issue.",
+        "AI access changes can affect large technology valuations and risk appetite, but they do not automatically make crypto bullish.",
+        "Russia's crypto legislation shows that global regulation is still changing quickly across jurisdictions.",
+        "Policy headlines should be separated from implementation timeline and actual capital flows.",
+        "Long-term BTC investors should still prioritize BTC price, Fear & Greed, ETF flow, Bull Score and DCA discipline."
+      ],
+      marketImpact: "Today's market impact comes from two channels. First, AI access regulation can affect technology stocks and broader risk-asset valuation. Second, crypto regulation can change expectations for exchanges, miners, payments and institutional participation. These factors do not always create a single direction, but they change how investors think about liquidity, policy risk and adoption.",
+      btcImpact: "BTC is influenced by macro liquidity, ETF demand and regulatory expectations. If AI and technology sentiment improves, risk appetite may support BTC. If regulatory headlines raise uncertainty, short-term volatility can increase. The most important checks remain ETF Flow and whether Bull Score confirms the price trend.",
+      ethImpact: "ETH is also affected by risk appetite, but it is more sensitive to application-layer activity, DeFi, AI agents and on-chain usage. Policy and platform competition can influence the market's view of Web3 applications, but flows and on-chain data still need to confirm the narrative.",
+      riskWarning: "This content is educational and informational only. It is not financial advice. Policy, AI and crypto headlines can be amplified by short-term markets. Investors should verify sources and avoid all-in behavior, chasing pumps or panic selling.",
+      dcaOpinion: "Today's DCA view is to maintain discipline and avoid rewriting the whole plan because of one headline. If BTC rebounds before ETF demand confirms it, split additional capital into stages. If price falls while core indicators remain intact, long-term investors can follow the original schedule.",
+      faq: [
+        { q: "Does AI access regulation directly push BTC higher?", a: "No. It may affect risk appetite and technology sentiment, but BTC still needs ETF demand, liquidity and market structure confirmation." },
+        { q: "Is Russia's crypto legislation automatically bullish?", a: "No. Country-level regulation depends on details, restrictions, implementation and market response." },
+        { q: "Should one daily headline change a DCA plan?", a: "Usually no. Unless cash flow, risk tolerance or long-term goals change, a DCA plan should not be rewritten by one headline." }
       ]
     }
   }

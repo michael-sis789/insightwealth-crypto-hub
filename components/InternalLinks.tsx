@@ -7,6 +7,9 @@ const links = [
   { href: "/btc-bull-bear-indicator", zh: "牛熊指標", en: "Bull/Bear Indicator" },
   { href: "/bitcoin-etf-flow", zh: "ETF資金流", en: "ETF Flow" },
   { href: "/bitcoin-fear-greed-index", zh: "恐懼貪婪", en: "Fear & Greed" },
+  { href: "/bitcoin-mvrv", zh: "MVRV估值", en: "MVRV" },
+  { href: "/bitcoin-nupl", zh: "NUPL盈虧", en: "NUPL" },
+  { href: "/bitcoin-puell-multiple", zh: "Puell礦工指標", en: "Puell Multiple" },
   { href: "/daily-crypto-brief", zh: "最新每日簡報", en: "Latest Daily Brief" }
 ];
 
