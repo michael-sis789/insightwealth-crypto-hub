@@ -1,19 +1,5 @@
 [
   {
-    "date": "2026-07-30",
-    "title": "美國PCE / Personal Income公布",
-    "category": "Macro",
-    "impact": "high",
-    "explanation": "Personal Income and Outlays, June 2026。PCE通膨與個人收入會影響市場對Fed政策路徑與風險資產流動性的預期。",
-    "assets": [
-      "BTC",
-      "ETH",
-      "US Stocks"
-    ],
-    "source": "U.S. Bureau of Economic Analysis release schedule",
-    "sourceUrl": "https://www.bea.gov/news/schedule"
-  },
-  {
     "date": "2026-07-31",
     "title": "Bitcoin ETF週度資金流檢查",
     "category": "ETF",
