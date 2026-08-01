@@ -1,17 +1,5 @@
 [
   {
-    "date": "2026-07-31",
-    "title": "Bitcoin ETF週度資金流檢查",
-    "category": "ETF",
-    "impact": "medium",
-    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
-    "assets": [
-      "BTC"
-    ],
-    "source": "Insight Wealth weekly ETF review workflow",
-    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
-  },
-  {
     "date": "2026-08-01",
     "title": "Ethereum網路升級測試窗口",
     "category": "ETH",
@@ -98,6 +86,18 @@
     ],
     "source": "U.S. Bureau of Economic Analysis release schedule",
     "sourceUrl": "https://www.bea.gov/news/schedule"
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Bitcoin ETF週度資金流檢查",
+    "category": "ETF",
+    "impact": "medium",
+    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Insight Wealth weekly ETF review workflow",
+    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
   },
   {
     "date": "2026-09-11",
