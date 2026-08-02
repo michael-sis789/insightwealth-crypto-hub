@@ -1,17 +1,5 @@
 [
   {
-    "date": "2026-08-01",
-    "title": "Ethereum網路升級測試窗口",
-    "category": "ETH",
-    "impact": "medium",
-    "explanation": "技術升級若順利，有助改善市場對ETH生態的信心。",
-    "assets": [
-      "ETH"
-    ],
-    "source": "Manual crypto event watchlist",
-    "sourceUrl": "https://insightwealth.live/crypto-calendar"
-  },
-  {
     "date": "2026-08-07",
     "title": "Bitcoin ETF週度資金流檢查",
     "category": "ETF",
