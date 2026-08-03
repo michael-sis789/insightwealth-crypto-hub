@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "insightwealth-live",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-08-03",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "routes": [
+    {
+      "pattern": "insightwealth.live/*",
+      "zone_name": "insightwealth.live"
+    },
+    {
+      "pattern": "www.insightwealth.live/*",
+      "zone_name": "insightwealth.live"
+    }
+  ],
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "insightwealth-live"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

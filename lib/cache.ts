@@ -1,13 +1,9 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
-
 type CacheEntry<T> = {
   value: T;
   timestamp: number;
 };
 
 const memoryCache = new Map<string, CacheEntry<unknown>>();
-const cacheDir = path.join(process.cwd(), "data", "cache");
 
 export function nowIso() {
   return new Date().toISOString();
@@ -36,21 +32,4 @@ export async function getCached<T>(key: string, ttlSeconds: number, fetcher: () 
   const value = await fetcher();
   memoryCache.set(key, { value, timestamp: now });
   return { value, cached: false, timestamp: new Date(now).toISOString() };
-}
-
-export async function readJsonFile<T>(relativePath: string): Promise<T> {
-  const file = path.join(process.cwd(), relativePath);
-  const raw = await fs.readFile(file, "utf8");
-  return JSON.parse(raw) as T;
-}
-
-export async function writeJsonFile(relativePath: string, data: unknown) {
-  const file = path.join(process.cwd(), relativePath);
-  await fs.mkdir(path.dirname(file), { recursive: true });
-  await fs.writeFile(file, `${JSON.stringify(data, null, 2)}\n`, "utf8");
-}
-
-export async function writeCacheFile(name: string, data: unknown) {
-  await fs.mkdir(cacheDir, { recursive: true });
-  await fs.writeFile(path.join(cacheDir, `${name}.json`), `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }

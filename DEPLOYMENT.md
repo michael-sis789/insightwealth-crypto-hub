@@ -8,17 +8,27 @@ Run these commands before every deploy:
 npm run update:btc-prices
 npm run lint
 npm run build
+npm run build:cloudflare
 ```
 
-The production build uses Next.js and Netlify's Next runtime through `@netlify/plugin-nextjs`. The project already includes `netlify.toml`:
+The production website is now deployed on **Cloudflare Workers** using OpenNext for Cloudflare. The project includes:
 
-```toml
-[build]
-  command = "npm run build"
-  publish = ".next"
+```text
+open-next.config.ts
+wrangler.jsonc
+```
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+Production Worker:
+
+```text
+insightwealth-live
+```
+
+Cloudflare routes:
+
+```text
+insightwealth.live/*
+www.insightwealth.live/*
 ```
 
 ## GitHub Push Deploy Workflow
@@ -29,10 +39,11 @@ This is the only deployment workflow for this project:
 Codex changes code
 -> npm run lint
 -> npm run build
+-> npm run build:cloudflare
 -> git add .
 -> git commit -m "clear message"
 -> git push origin main
--> Personal Netlify auto deploys
+-> Cloudflare Workers auto deploys from GitHub Actions
 ```
 
 Never run:
@@ -41,18 +52,12 @@ Never run:
 netlify deploy --prod
 ```
 
-Netlify deployment is handled only by GitHub automatic deploys from the `main` branch.
+Netlify deployment is no longer the production workflow for `insightwealth.live`.
 Never rely on Netlify Agent Runner for production deploys.
 
-Netlify CLI deploy is disabled for this project because `netlify deploy --prod` repeatedly fails with `JSONHTTPError: Forbidden` even after:
+Netlify CLI deploy is disabled because `netlify deploy --prod` repeatedly failed with `JSONHTTPError: Forbidden` and the earlier Team/Netlify credit path was unreliable.
 
-- confirming `netlify status` is logged in
-- confirming `.netlify/state.json` links to site ID `30efb912-abb9-49c7-b381-662f9c232a48`
-- refreshing OAuth with `netlify login --new`
-- confirming API read access works
-- confirming the account role is Owner
-
-Use GitHub-based Netlify automatic deploys instead.
+Use GitHub-based Cloudflare automatic deploys instead.
 
 Current GitHub repository:
 
@@ -67,6 +72,7 @@ Future deploy process:
    ```bash
    npm run lint
    npm run build
+   npm run build:cloudflare
    ```
 3. Codex stages changes:
    ```bash
@@ -80,13 +86,51 @@ Future deploy process:
    ```bash
    git push origin main
    ```
-6. Personal Netlify automatically deploys from the `main` branch.
+6. GitHub Actions deploys to Cloudflare Workers from the `main` branch.
 
 Run `npm run update:btc-prices` before lint/build only when the change needs refreshed cached BTC price data.
 
+## Cloudflare Production Setup
+
+Cloudflare account:
+
+```text
+mic78ai@gmail.com
+```
+
+Account ID:
+
+```text
+16fd66dc8d6e7a3c33a446051c66e201
+```
+
+Zone:
+
+```text
+insightwealth.live
+```
+
+Cloudflare nameservers configured at Namecheap:
+
+```text
+bella.ns.cloudflare.com
+brian.ns.cloudflare.com
+```
+
+DNS propagation normally takes 1-2 hours and can take up to 24 hours.
+
+GitHub Actions requires these repository secrets for automatic Cloudflare deploys:
+
+```text
+CLOUDFLARE_ACCOUNT_ID=16fd66dc8d6e7a3c33a446051c66e201
+CLOUDFLARE_API_TOKEN=<Cloudflare API token with Workers deploy permissions>
+```
+
+The API token should have permission to deploy Workers and manage Worker routes for the `insightwealth.live` zone.
+
 ## Daily Data Auto Update
 
-The production data cache is updated every day at 8:00 AM Malaysia time by this LaunchAgent:
+The GitHub data workflow is scheduled every day at 7:00 AM Malaysia time. A local Mac LaunchAgent may also run a backup update at 8:00 AM Malaysia time:
 
 ```text
 /Users/chai/Library/LaunchAgents/com.chai.insightwealth.website-daily-update.plist
@@ -114,7 +158,7 @@ The daily wrapper:
 6. Runs `npm run build`.
 7. Stages only `data/*.json` and `data/cache/*.json`.
 8. Commits changed data with `Update daily crypto data YYYY-MM-DD`.
-9. Pushes to GitHub `main`, then Personal Netlify auto-deploys.
+9. Pushes to GitHub `main`, then GitHub Actions deploys to Cloudflare Workers when Cloudflare secrets are configured.
 
 Logs:
 

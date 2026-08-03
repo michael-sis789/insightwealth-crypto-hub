@@ -2,7 +2,10 @@ import etfFlowJson from "@/data/etf-flow.json";
 import dailyBrief from "@/data/daily-brief.json";
 import events from "@/data/events.json";
 import onchainJson from "@/data/onchain-indicators.json";
-import { formatTimestamp, getCached, nowIso, readJsonFile } from "@/lib/cache";
+import btcMarketCache from "@/data/cache/btc-market.json";
+import fearGreedCache from "@/data/cache/fear-greed.json";
+import fundingRateCache from "@/data/cache/funding-rate.json";
+import { formatTimestamp, getCached, nowIso } from "@/lib/cache";
 import type { MarketDataPoint, Metric, MetricStatus, ScoreRow, Signal } from "@/lib/types";
 
 type BtcMarket = {
@@ -91,20 +94,23 @@ async function fetchJson<T>(url: string): Promise<T> {
 }
 
 async function readCachedPoint<T>(name: string, source: string): Promise<MarketDataPoint<T> | null> {
-  try {
-    const cached = await readJsonFile<{ ok: boolean; value: T; source?: string; lastUpdated?: string; error?: string }>(`data/cache/${name}.json`);
-    if (!cached.ok || !cached.value) return null;
-    return {
-      ok: true,
-      value: cached.value,
-      source: `${cached.source ?? source} (cached JSON fallback)`,
-      lastUpdated: cached.lastUpdated ?? nowIso(),
-      cached: true,
-      error: cached.error
-    };
-  } catch {
+  const caches: Record<string, unknown> = {
+    "btc-market": btcMarketCache,
+    "fear-greed": fearGreedCache,
+    "funding-rate": fundingRateCache
+  };
+  const cached = caches[name] as { ok: boolean; value?: T; source?: string; lastUpdated?: string; error?: string } | undefined;
+  if (!cached?.ok || !cached.value) {
     return null;
   }
+  return {
+    ok: true,
+    value: cached.value,
+    source: `${cached.source ?? source} (cached JSON fallback)`,
+    lastUpdated: cached.lastUpdated ?? nowIso(),
+    cached: true,
+    error: cached.error
+  };
 }
 
 export async function getBtcMarket(): Promise<MarketDataPoint<BtcMarket>> {
