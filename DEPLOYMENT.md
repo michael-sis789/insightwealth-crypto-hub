@@ -130,7 +130,7 @@ The API token should have permission to deploy Workers and manage Worker routes 
 
 ## Daily Data Auto Update
 
-The GitHub data workflow is scheduled every day at 7:00 AM Malaysia time. A local Mac LaunchAgent may also run a backup update at 8:00 AM Malaysia time:
+The GitHub data workflow is scheduled every day at 8:00 AM Malaysia time. A local Mac LaunchAgent may also run a backup update at 8:00 AM Malaysia time:
 
 ```text
 /Users/chai/Library/LaunchAgents/com.chai.insightwealth.website-daily-update.plist
