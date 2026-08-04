@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-08-04",
   "label": "Updated daily / manually verified",
   "notes": "Daily Bitcoin on-chain indicators. Never replace unavailable values with mock data.",
   "indicators": {
