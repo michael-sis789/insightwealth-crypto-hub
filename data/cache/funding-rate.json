@@ -1,10 +1,5 @@
 {
-  "ok": true,
-  "source": "Binance USD-M Futures fundingRate API",
-  "lastUpdated": "2026-08-08T04:56:56.557Z",
-  "value": {
-    "symbol": "BTCUSDT",
-    "rate": 0.00005557,
-    "fundingTime": "2026-08-08T00:00:00.001Z"
-  }
+  "ok": false,
+  "lastUpdated": "2026-08-09T01:25:26.907Z",
+  "error": "451 "
 }
