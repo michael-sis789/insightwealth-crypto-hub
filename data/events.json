@@ -1,31 +1,5 @@
 [
   {
-    "date": "2026-08-12",
-    "title": "Bitcoin下一輪減半周期進度觀察",
-    "category": "BTC",
-    "impact": "low",
-    "explanation": "減半後供給效應通常需要長周期觀察，不應單獨作為短線交易理由。",
-    "assets": [
-      "BTC"
-    ],
-    "source": "Manual crypto event watchlist",
-    "sourceUrl": "https://insightwealth.live/crypto-calendar"
-  },
-  {
-    "date": "2026-08-12",
-    "title": "美國CPI公布",
-    "category": "Macro",
-    "impact": "high",
-    "explanation": "July 2026 CPI在美東時間8:30公布。若通膨高於預期，可能提高利率壓力；若低於預期，可能改善風險資產情緒。",
-    "assets": [
-      "BTC",
-      "ETH",
-      "Altcoins"
-    ],
-    "source": "BLS CPI release schedule",
-    "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm"
-  },
-  {
     "date": "2026-08-14",
     "title": "Bitcoin ETF週度資金流檢查",
     "category": "ETF",
