@@ -93,8 +93,186 @@ const zhDeepSections = [
       "這些頁面的內部連結不是為了堆砌SEO，而是為了讓讀者形成完整流程。看完今日價格後，可以去ETF Flow確認資金；看完Fear & Greed後，可以去DCA Calculator測試長期策略；看完每日影片文章後，可以回到Dashboard確認最新資料。",
       "長期來看，網站的價值在於可回訪、可搜尋、可比較。YouTube影片適合快速理解，網站文章與工具適合保存、引用與重複使用。兩者結合，才能降低只靠社群流量的風險，建立真正的Google organic traffic基礎。"
     ]
+  },
+  {
+    slug: "start-here",
+    zh: {
+      title: "如何使用洞見財富 Crypto Hub - BTC每日決策指南",
+      description: "新讀者指南：了解如何用洞見財富追蹤BTC價格、Fear & Greed、ETF資金流、Bull Score與DCA觀點，建立每日投資檢查流程。",
+      h1: "如何使用洞見財富 Crypto Hub",
+      summary: "這不是加密貨幣百科，也不是短線喊單網站。這是一個給長期BTC投資者使用的每日決策儀表盤，幫助你在五分鐘內看懂今天最重要的市場資訊。",
+      lastUpdated: "2026-08-14",
+      dataSources: ["Insight Wealth editorial methodology", "BTC Dashboard live/cache data", "Daily Crypto Brief workflow", "YouTube channel @9insightwealth"],
+      keyTakeaways: ["每天先看五個核心項目：BTC價格、Fear & Greed、ETF Flow、Bull Score、DCA Opinion。", "不要把單一新聞或單一指標變成買賣決定。", "網站重點是幫你維持長期紀律，而不是刺激短線交易。"],
+      sections: [
+        { heading: "這個網站解決什麼問題？", body: ["加密市場每天都有大量價格波動、新聞標題、宏觀資料、ETF流向與社群情緒。對普通投資者來說，真正困難的不是資訊太少，而是資訊太多。當你同時看到BTC上漲、Fear & Greed恐慌、ETF資金流出、某個KOL喊牛市，最容易做出衝動決定。", "洞見財富 Crypto Hub 的設計目標，是把資訊壓縮成可重複的每日檢查流程。首頁與BTC儀表盤會把最重要的五個項目放在最前面：BTC Price、Fear & Greed、ETF Flow、Bull Score與DCA Opinion。你不需要先看二十個複雜指標，先知道今天市場是偏冷、偏熱、偏多、偏空，然後再決定是否需要深入閱讀。"] },
+        { heading: "每日五分鐘使用流程", body: ["第一分鐘，看BTC價格與24小時變化。這只是市場溫度，不是完整答案。第二分鐘，看Fear & Greed。如果價格上漲但情緒已經極度貪婪，就要小心追高；如果價格下跌但情緒已經極度恐慌，長期投資者反而應該檢查DCA計畫是否仍然可執行。", "第三分鐘，看ETF Flow。現貨ETF資金流是機構需求的重要觀察窗口，尤其適合用日線與週線判斷需求是否改善。第四分鐘，看Bull Score。它把價格、情緒、資金流、鏈上估值與槓桿資料整理成一個分數，但分數不是指令，只是風險環境摘要。第五分鐘，看DCA Opinion，把今天的資料轉成長期投資者能理解的節奏。"] },
+        { heading: "不同頁面怎麼搭配？", body: ["BTC Dashboard 是每天第一個看的頁面。它回答：今天長期BTC投資者最需要知道什麼？DCA Calculator回答：如果我過去按照某個節奏定投，結果會如何？Bitcoin ETF Flow回答：機構資金是流入還是流出？Fear & Greed回答：市場情緒是在恐慌還是過熱？", "Bull Bear Indicator把多個訊號合成一個分數，適合快速比較今天與過去幾天的市場狀態。Daily Crypto Brief則把每天影片重點、新聞、影響與DCA觀點轉成可搜尋文章，方便你看完影片後回來查資料。"] },
+        { heading: "為什麼這對內容品質重要？", body: ["好的金融工具網站不能只有幾張卡片與廣告位。它必須清楚說明資料來源、計算方法、限制、風險與使用情境。這也是洞見財富持續增加方法論、FAQ、來源目錄、作者頁與長篇教學頁的原因。", "對Google搜尋與AI搜尋來說，真正有價值的頁面應該能直接回答問題：什麼是這個指標？為什麼重要？如何使用？有什麼限制？與其他工具如何連接？本站會把每個核心工具都做成可讀、可引用、可回訪的內容，而不是只追短期流量。"] }
+      ],
+      faq: [
+        { q: "新讀者應該先看哪一頁？", a: "先看BTC Dashboard，再看DCA Calculator。如果你只想每天快速了解市場，首頁五張核心卡片已經足夠。" },
+        { q: "洞見財富適合短線交易嗎？", a: "不適合。本站定位是長期BTC投資者的每日決策儀表盤，不提供短線買賣點。" },
+        { q: "每天需要看多久？", a: "一般情況下五分鐘即可。只有在市場波動大、ETF資金流明顯變化或Bull Score快速改變時，才需要深入閱讀。" }
+      ]
+    },
+    en: {
+      title: "How to Use Insight Wealth Crypto Hub - Daily BTC Investor Guide",
+      description: "Start here: learn how to use Insight Wealth to track BTC price, Fear & Greed, ETF flow, Bull Score and DCA opinion in a daily investor workflow.",
+      h1: "How to Use Insight Wealth Crypto Hub",
+      summary: "This is not a crypto encyclopedia or a short-term signal site. It is a daily decision dashboard for long-term Bitcoin investors who want a clear, repeatable market workflow.",
+      lastUpdated: "2026-08-14",
+      dataSources: ["Insight Wealth editorial methodology", "BTC Dashboard live/cache data", "Daily Crypto Brief workflow", "YouTube channel @9insightwealth"],
+      keyTakeaways: ["Start with five items: BTC price, Fear & Greed, ETF Flow, Bull Score and DCA Opinion.", "Do not turn one headline or one indicator into an investment decision.", "The site is built to support long-term discipline, not short-term impulse trading."],
+      sections: [
+        { heading: "What problem does this site solve?", body: ["Crypto investors face too much information: price moves, headlines, macro data, ETF flows, on-chain charts and social media opinions. The problem is not a lack of data. The problem is deciding which data matters today and how strongly it should influence a long-term plan.", "Insight Wealth Crypto Hub compresses that noise into a repeatable daily checklist. The homepage and BTC Dashboard put five items first: BTC Price, Fear & Greed, ETF Flow, Bull Score and DCA Opinion. You do not need to understand every advanced metric before making sense of the day."] },
+        { heading: "The five-minute daily workflow", body: ["Minute one: check BTC price and 24h change. Treat it as temperature, not diagnosis. Minute two: check Fear & Greed. If price is rising while sentiment is extremely greedy, chasing risk is higher. If price is falling while sentiment is extremely fearful, long-term investors should review whether their DCA plan is still sustainable.", "Minute three: check ETF Flow. Spot ETF flows are a useful window into institutional demand and are best read on daily and weekly horizons. Minute four: check Bull Score. It combines price, sentiment, flows, valuation and leverage into a readable market score. Minute five: read DCA Opinion and return to the plan."] },
+        { heading: "How the pages fit together", body: ["BTC Dashboard is the first daily page. It answers what long-term BTC investors should know today. DCA Calculator answers what a disciplined historical accumulation plan may have produced. Bitcoin ETF Flow answers whether institutional demand is improving or weakening. Fear & Greed explains whether sentiment is fearful or overheated.", "Bull Bear Indicator combines several signals into one transparent score. Daily Crypto Brief turns the daily video, key news, market impact and DCA view into a searchable article that viewers can revisit after watching YouTube."] },
+        { heading: "Why this matters for content quality", body: ["A useful financial tools website cannot be just a few metric cards and ad placements. It should explain data sources, calculation logic, limitations, risks and realistic use cases. That is why Insight Wealth includes methodology, FAQ, source directory, author page, tool guides and daily market briefs.", "For Google Search and AI search systems, high-value pages answer real questions directly: what is this metric, why does it matter, how do I use it, what are the limits, and what related page should I read next?"] }
+      ],
+      faq: [
+        { q: "Which page should a new reader open first?", a: "Start with the BTC Dashboard, then use the DCA Calculator. For a quick daily view, the five core homepage cards are enough." },
+        { q: "Is Insight Wealth for short-term trading?", a: "No. It is a daily decision dashboard for long-term Bitcoin investors, not a trade-signal service." },
+        { q: "How long should the daily check take?", a: "Usually around five minutes. Read deeper only when volatility, ETF flow or Bull Score changes materially." }
+      ]
+    }
+  },
+  {
+    slug: "bitcoin-investor-toolkit",
+    zh: {
+      title: "Bitcoin長期投資者工具包 - DCA、風險管理與每日儀表盤",
+      description: "完整BTC長期投資工具包：學會使用價格、Fear & Greed、ETF Flow、Bull Score、DCA Calculator與風險管理流程。",
+      h1: "Bitcoin長期投資者工具包",
+      summary: "本工具包把洞見財富最重要的頁面整理成一套可執行流程，幫助長期BTC投資者用資料管理節奏，而不是被短線市場牽著走。",
+      lastUpdated: "2026-08-14",
+      dataSources: ["CoinGecko cached BTC data", "Alternative.me Fear & Greed", "Manual ETF flow dataset", "Insight Wealth DCA model"],
+      keyTakeaways: ["長期投資者需要流程，不需要每天改策略。", "DCA、再平衡、現金流與最大回撤應該一起設計。", "工具包的核心是避免all-in、避免追高、避免恐慌賣出。"],
+      sections: [
+        { heading: "第一部分：定義你的BTC投資框架", body: ["在使用任何計算器之前，投資者應該先定義三件事：投資期限、現金流與最大可承受回撤。如果你的投資期限只有三個月，BTC可能並不適合放太大比例；如果你的收入不穩定，DCA金額必須保守；如果你不能承受50%的帳面回撤，就不應該把BTC配置得太高。", "很多人在牛市中把DCA變成追高，在熊市中又把DCA變成停止投入。真正的工具包應該先規定什麼情況維持、什麼情況加速、什麼情況暫停、什麼情況DCA out。這些規則最好在市場平靜時寫下來，而不是在價格劇烈波動時臨時決定。"] },
+        { heading: "第二部分：每日市場檢查表", body: ["每天的第一個問題不是今天會不會漲，而是市場風險是否改變。BTC Price回答價格位置；Fear & Greed回答情緒是否極端；ETF Flow回答機構需求；Bull Score回答多項資料是否一致；DCA Opinion回答長期投資者今天應該如何維持節奏。", "如果五個核心項目都偏多，投資者仍不應all-in，而是確認是否符合自己的資產配置上限。如果五個項目偏空，也不代表必須恐慌賣出，而是檢查現金流、倉位與未來投入計畫。"] },
+        { heading: "第三部分：用計算器檢查現實", body: ["BTC DCA Calculator可以讓你測試不同開始日期、頻率與金額。它的重點不是讓過去收益看起來漂亮，而是讓你看到過程中的最大回撤與壓力。很多策略只有在回測終點看起來舒服，但中途可能需要承受多年虧損。", "未來網站會擴展更多計算器，例如ETH DCA、Lump Sum vs DCA、Portfolio Allocation、Position Size、Risk Reward與Future Value。每個工具都應該連回同一個原則：先控制風險，再談收益。"] },
+        { heading: "第四部分：建立每週與每月複盤", body: ["每日檢查避免被市場嚇到，每週複盤避免錯過趨勢，每月複盤則檢查資產配置是否偏離計畫。每週可以回顧ETF七日流量、價格趨勢與Bull Score變化；每月可以檢查DCA執行情況、現金比例、BTC占比與是否需要再平衡。", "複盤不需要複雜。只要回答三個問題：我是否遵守原本規則？市場資料是否出現結構性變化？下一次投入是否仍符合現金流？如果三個答案清楚，投資就不容易被情緒接管。"] }
+      ],
+      faq: [
+        { q: "長期BTC投資者每天一定要看很多指標嗎？", a: "不需要。先看BTC Price、Fear & Greed、ETF Flow、Bull Score與DCA Opinion即可，其他指標作為進階背景。" },
+        { q: "DCA金額應該怎麼決定？", a: "應該根據穩定現金流、緊急預備金、負債與最大可承受回撤決定，而不是根據社群情緒。" },
+        { q: "牛市需要停止DCA嗎？", a: "不一定。可以維持基礎DCA，但在極端貪婪或倉位過高時降低追加資金，甚至設計DCA out規則。" }
+      ]
+    },
+    en: {
+      title: "Bitcoin Investor Toolkit - DCA, Risk Management and Daily Dashboard",
+      description: "A practical Bitcoin investor toolkit for using BTC price, Fear & Greed, ETF Flow, Bull Score, DCA Calculator and risk management together.",
+      h1: "Bitcoin Investor Toolkit",
+      summary: "This toolkit turns the most important Insight Wealth pages into a practical workflow for long-term BTC investors who want data-driven discipline instead of market noise.",
+      lastUpdated: "2026-08-14",
+      dataSources: ["CoinGecko cached BTC data", "Alternative.me Fear & Greed", "Manual ETF flow dataset", "Insight Wealth DCA model"],
+      keyTakeaways: ["Long-term investors need a process, not a new strategy every day.", "DCA, rebalancing, cash flow and maximum drawdown should be designed together.", "The toolkit is built to reduce all-in behavior, chasing and panic selling."],
+      sections: [
+        { heading: "Part one: define your BTC framework", body: ["Before using any calculator, define three things: time horizon, cash flow and maximum tolerable drawdown. If your horizon is only a few months, BTC may be too volatile for a large allocation. If your income is unstable, the DCA amount must be conservative. If you cannot tolerate a 50% paper drawdown, BTC allocation should be limited.", "Many investors turn DCA into chasing during bull markets and stop DCA during bear markets. A serious toolkit defines when to maintain, when to add slowly, when to pause and when to DCA out. These rules should be written when the market is calm, not during a sharp move."] },
+        { heading: "Part two: daily market checklist", body: ["The first daily question is not whether price will rise today. The better question is whether risk conditions changed. BTC Price shows price location. Fear & Greed shows emotional extremes. ETF Flow shows institutional demand. Bull Score shows whether multiple inputs agree. DCA Opinion translates the day into a long-term rhythm.", "If all five core items are constructive, investors still should not go all-in. They should check allocation limits. If all five are weak, it does not automatically mean panic selling. It means checking cash flow, position size and the future contribution plan."] },
+        { heading: "Part three: use calculators to test reality", body: ["The BTC DCA Calculator lets you test different start dates, frequencies and amounts. The point is not to make past returns look attractive. The point is to see maximum drawdown and psychological pressure. Many strategies look comfortable at the end of a backtest while requiring years of discipline in the middle.", "Future calculators can expand this workflow: ETH DCA, Lump Sum vs DCA, Portfolio Allocation, Position Size, Risk Reward and Future Value. Each tool should return to the same principle: control risk before discussing return."] },
+        { heading: "Part four: weekly and monthly review", body: ["Daily checks prevent emotional surprises. Weekly reviews prevent investors from missing trend changes. Monthly reviews test whether allocation has drifted away from the plan. Weekly, review ETF seven-day flow, price trend and Bull Score changes. Monthly, review DCA execution, cash level, BTC allocation and rebalancing needs.", "A review does not need to be complex. Ask three questions: did I follow my rules, did market data show a structural change, and does the next contribution still fit my cash flow? Clear answers make it harder for emotion to take over."] }
+      ],
+      faq: [
+        { q: "Do long-term BTC investors need many indicators every day?", a: "No. Start with BTC Price, Fear & Greed, ETF Flow, Bull Score and DCA Opinion. Advanced metrics can stay below the fold." },
+        { q: "How should I choose a DCA amount?", a: "Base it on stable cash flow, emergency reserves, debt and maximum drawdown tolerance, not social media excitement." },
+        { q: "Should DCA stop during a bull market?", a: "Not always. Investors may maintain base DCA, reduce extra buying during extreme greed, or design DCA-out rules when allocation is too high." }
+      ]
+    }
+  },
+  {
+    slug: "crypto-faq",
+    zh: {
+      title: "Crypto FAQ - 比特幣、DCA、ETF、鏈上指標常見問題",
+      description: "洞見財富Crypto FAQ，回答Bitcoin、DCA、ETF Flow、Fear & Greed、MVRV、NUPL、Puell與風險管理常見問題。",
+      h1: "Crypto FAQ 常見問題",
+      summary: "本頁集中回答新讀者最常問的問題，讓你快速理解洞見財富如何看待Bitcoin、DCA、ETF資金流、情緒指標、鏈上估值與風險管理。",
+      lastUpdated: "2026-08-14",
+      dataSources: ["Insight Wealth editorial policy", "Bitcoin market dashboard methodology", "Public market data references", "Local cached datasets"],
+      keyTakeaways: ["FAQ頁面幫助新讀者快速找到答案。", "所有答案都避免保證收益與短線喊單。", "每個問題都應連回風險管理與長期紀律。"],
+      sections: [
+        { heading: "Bitcoin與長期投資", body: ["Bitcoin是去中心化的數位資產，總供應量上限為2100萬枚。投資者關注BTC，通常是因為它具有稀缺性、全球流動性、抗審查屬性與機構採用可能性。但這些特點不代表價格只會上漲。BTC歷史上經歷過多次大幅回撤，長期投資者必須先接受波動。", "洞見財富不把Bitcoin描述成保證致富工具。更務實的看法是：BTC可以是高波動資產配置的一部分，但需要DCA、倉位控制、現金流管理與長期紀律。投資靠紀律，不靠運氣；財富靠堅持，不靠奇蹟。"] },
+        { heading: "DCA與一次性投入", body: ["DCA代表定期定額投入，它的最大優點是降低進場時點壓力。一次性投入在某些歷史期間可能收益更高，但心理壓力也更大。如果投資者在下跌途中無法承受回撤，理論上更高的期望報酬也可能沒有實際意義。", "好的DCA計畫不是永遠買入同一金額而完全不思考，而是有清楚規則。例如極端恐慌時可以小幅提高，但仍然分批；極端貪婪時可以維持基礎投入或停止追加；倉位過高時應考慮再平衡。"] },
+        { heading: "ETF Flow與機構需求", body: ["Bitcoin ETF Flow觀察現貨ETF每日淨流入或淨流出。流入代表ETF買方需求強於賣方贖回，可能支撐BTC需求；流出則可能代表短期需求轉弱。但ETF Flow不是唯一因素，價格仍受宏觀流動性、合約槓桿與市場情緒影響。", "ETF資料通常不是秒級即時資料，應以交易日結束後的日線或週線閱讀。本站若沒有可靠官方即時API，會使用手動JSON更新並標示Updated daily，而不是假裝即時。"] },
+        { heading: "鏈上指標與情緒指標", body: ["MVRV、NUPL與Puell Multiple都是週期背景指標。MVRV比較市值與實現市值，NUPL觀察市場未實現盈虧，Puell從礦工收入角度看週期壓力。這些指標適合回答估值是否偏熱或偏冷，不適合用來預測明天價格。", "Fear & Greed Index則觀察市場情緒。極端恐懼可能代表壓力，也可能帶來長期機會；極端貪婪可能代表強勢，也可能意味追高風險。真正有效的做法，是把情緒與價格、資金流、估值一起閱讀。"] }
+      ],
+      faq: [
+        { q: "洞見財富提供投資建議嗎？", a: "不提供。所有內容都是教育與資訊用途，不構成買賣建議。" },
+        { q: "為什麼網站一直強調DCA？", a: "因為DCA能幫助長期投資者降低進場時點壓力並維持紀律，但它不能消除市場風險。" },
+        { q: "哪些資料是即時的？", a: "BTC價格、部分市場資料與Funding可接近即時或快取更新；ETF與部分鏈上資料為每日或人工確認。" },
+        { q: "如果資料不可用怎麼辦？", a: "網站應顯示Data temporarily unavailable、Coming Soon或Stale data，而不是使用假數字。" }
+      ]
+    },
+    en: {
+      title: "Crypto FAQ - Bitcoin, DCA, ETF Flow and On-Chain Indicators",
+      description: "Insight Wealth Crypto FAQ answering common questions about Bitcoin, DCA, ETF flow, Fear & Greed, MVRV, NUPL, Puell and risk management.",
+      h1: "Crypto FAQ",
+      summary: "This page answers common reader questions about Bitcoin, DCA, ETF flow, sentiment indicators, on-chain valuation and risk management in the Insight Wealth framework.",
+      lastUpdated: "2026-08-14",
+      dataSources: ["Insight Wealth editorial policy", "Bitcoin market dashboard methodology", "Public market data references", "Local cached datasets"],
+      keyTakeaways: ["The FAQ helps new readers find clear answers quickly.", "Answers avoid guaranteed-return claims and short-term signal language.", "Every question connects back to risk management and long-term discipline."],
+      sections: [
+        { heading: "Bitcoin and long-term investing", body: ["Bitcoin is a decentralized digital asset with a fixed supply cap of 21 million coins. Investors study BTC because of scarcity, global liquidity, censorship resistance and possible institutional adoption. None of these features means price can only go up. Bitcoin has experienced multiple deep drawdowns, so long-term investors must accept volatility first.", "Insight Wealth does not present Bitcoin as a guaranteed wealth machine. A more practical view is that BTC can be part of a high-volatility allocation, but it requires DCA, position sizing, cash-flow management and long-term discipline."] },
+        { heading: "DCA versus lump sum", body: ["DCA means investing a fixed amount on a fixed schedule. Its main advantage is reducing entry-timing stress. Lump-sum investing may outperform in some historical windows, but it creates more psychological pressure. If an investor cannot tolerate the drawdown, a theoretically higher return may not be useful in practice.", "A good DCA plan is not blind buying forever. It has rules. During extreme fear, investors may modestly increase staged contributions. During extreme greed, they may maintain base DCA or stop extra buying. When allocation becomes too large, rebalancing or DCA-out rules matter."] },
+        { heading: "ETF Flow and institutional demand", body: ["Bitcoin ETF Flow tracks daily net inflows and outflows for spot ETFs. Inflows suggest buyer demand is stronger than redemptions and may support BTC demand. Outflows can suggest weaker short-term demand. ETF flow is still only one factor; macro liquidity, derivatives leverage and sentiment also matter.", "ETF data is usually not second-by-second data. It is better read after the trading day and across weekly trends. If Insight Wealth does not have a reliable official real-time API, it uses manual JSON updates with an Updated daily label instead of pretending the data is live."] },
+        { heading: "On-chain and sentiment indicators", body: ["MVRV, NUPL and Puell Multiple are cycle-context indicators. MVRV compares market value with realized value. NUPL reads unrealized profit and loss across the network. Puell looks at miner revenue pressure. These metrics help judge whether valuation is hot or cold; they should not be used to predict tomorrow's price.", "Fear & Greed Index measures sentiment. Extreme fear can signal stress but may also create long-term opportunities. Extreme greed can reflect strength but also raises chasing risk. The best practice is to read sentiment with price, flows and valuation."] }
+      ],
+      faq: [
+        { q: "Does Insight Wealth provide investment advice?", a: "No. All content is educational and informational only. It is not buy, sell or hold advice." },
+        { q: "Why does the site emphasize DCA?", a: "DCA helps long-term investors reduce entry-timing stress and maintain discipline, but it cannot remove market risk." },
+        { q: "Which data is live?", a: "BTC price, some market data and funding can be near real time or cached. ETF and some on-chain data are daily or manually verified." },
+        { q: "What if data is unavailable?", a: "The site should show Data temporarily unavailable, Coming Soon or Stale data instead of fake numbers." }
+      ]
+    }
+  },
+  {
+    slug: "content-quality",
+    zh: {
+      title: "洞見財富內容品質標準 - 原創研究、資料來源與使用者體驗",
+      description: "了解洞見財富如何提升內容品質、避免薄內容、標示資料來源、維護AdSense友善體驗與金融資訊透明度。",
+      h1: "內容品質標準",
+      summary: "本頁公開洞見財富的內容品質原則：原創解釋、有來源資料、清楚風險提示、可讀工具頁、低干擾廣告與長期維護。",
+      lastUpdated: "2026-08-14",
+      dataSources: ["Google AdSense Program Policies", "Google Search helpful content guidance", "Insight Wealth editorial policy", "Local site QA checklist"],
+      keyTakeaways: ["內容必須先服務讀者，再服務搜尋引擎。", "金融資料必須標示來源、日期與限制。", "廣告不能遮擋內容，也不能讓頁面變得難用。"],
+      sections: [
+        { heading: "我們如何定義高品質內容", body: ["高品質內容不是字數堆疊，也不是把熱門關鍵字塞進頁面。對洞見財富來說，高品質內容必須回答真實問題：這個指標是什麼？它如何計算？資料從哪裡來？它適合用在哪個時間尺度？投資者最容易誤解什麼？它與DCA和風險管理有什麼關係？", "每個工具頁都需要有自己的解釋、FAQ、資料來源、免責聲明與相關工具連結。這樣做不只是為了SEO，也是為了讓讀者真正理解數字背後的含義。金融內容如果只給結論、不給限制，反而容易讓人做出錯誤決策。"] },
+        { heading: "如何避免薄內容", body: ["薄內容通常有幾個特徵：只複製公開資料、沒有原創分析、頁面文字很少、廣告比內容更突出、沒有作者或聯絡資訊、沒有資料來源、工具沒有說明邏輯。洞見財富會用相反方向設計頁面：先給核心答案，再提供背景、方法、限制與FAQ。", "網站會持續增加可回訪內容，包括每日簡報、YouTube影片文章、指標教學、DCA教學、風險管理指南與來源目錄。這些內容互相連結，形成完整的BTC長期投資學習路徑。"] },
+        { heading: "廣告與使用者體驗", body: ["AdSense廣告位應該補貼內容營運，而不是破壞閱讀。本站不使用彈窗、不遮擋主要內容、不把廣告偽裝成導航、不誘導錯誤點擊。廣告位放在頁面自然位置，例如頂部橫幅、內文段落後、桌面側欄與頁底響應式位置。", "網站在廣告核准前也必須看起來完整。AdSlot元件會顯示清楚的佔位區，避免版面跳動。即使沒有廣告，頁面仍應以內容、工具與資料為主。"] },
+        { heading: "持續維護與更新", body: ["加密市場變化很快，過期內容會降低信任。因此網站使用GitHub Actions每日更新市場資料與JSON快取，並在頁面顯示Last updated、Source與資料狀態。若資料來源失效，頁面應標示不可用，而不是用假資料補洞。", "內容更新不只包括數字，也包括解釋。當ETF市場、鏈上資料來源、宏觀日曆或API限制改變時，相關頁面需要更新方法論。這種維護成本很高，但它是金融內容網站建立信任的必要條件。"] }
+      ],
+      faq: [
+        { q: "這個頁面是為AdSense而寫的嗎？", a: "它也是給讀者看的透明說明。AdSense需要高品質內容，但真正的目標是讓使用者知道本站如何處理資料與風險。" },
+        { q: "網站會使用AI生成內容嗎？", a: "網站可能使用AI協助整理與草擬，但重要頁面必須保留來源、限制、風險提示與人工維護流程。" },
+        { q: "廣告會影響閱讀嗎？", a: "不應該。本站避免彈窗、遮擋與欺騙性廣告位置，保持內容優先。" }
+      ]
+    },
+    en: {
+      title: "Insight Wealth Content Quality Standards - Original Research and User Experience",
+      description: "Learn how Insight Wealth improves content quality, avoids thin content, labels data sources, supports AdSense-friendly UX and keeps financial information transparent.",
+      h1: "Content Quality Standards",
+      summary: "This page explains Insight Wealth's quality principles: original explanations, sourced data, clear risk language, useful tool pages, low-interruption ads and long-term maintenance.",
+      lastUpdated: "2026-08-14",
+      dataSources: ["Google AdSense Program Policies", "Google Search helpful content guidance", "Insight Wealth editorial policy", "Local site QA checklist"],
+      keyTakeaways: ["Content must serve readers before search engines.", "Financial data needs source, date and limitations.", "Ads must not block content or make the site hard to use."],
+      sections: [
+        { heading: "How we define high-quality content", body: ["High-quality content is not word count padding and it is not keyword stuffing. For Insight Wealth, useful content answers real questions: what is this indicator, how is it calculated, where does the data come from, what time horizon is appropriate, what do investors misunderstand, and how does it connect with DCA and risk management?", "Every tool page needs its own explanation, FAQ, data sources, disclaimer and related links. This is not only for SEO. It helps readers understand what a number means and what it does not mean. Financial content that gives conclusions without limits can push users toward poor decisions."] },
+        { heading: "How we avoid thin content", body: ["Thin content often copies public data, lacks original analysis, has very little text, makes ads more prominent than content, hides ownership information, omits sources or provides tools without explaining logic. Insight Wealth designs in the opposite direction: core answer first, then background, method, limitation and FAQ.", "The site will keep expanding repeat-visit content: daily briefs, YouTube video articles, indicator guides, DCA guides, risk-management pages and source directories. These pages are internally linked to create a practical long-term Bitcoin learning path."] },
+        { heading: "Ads and user experience", body: ["Ads should support content operations, not damage reading. The site does not use popups, does not cover main content, does not disguise ads as navigation and does not encourage accidental clicks. Ad placements sit in natural positions such as top banner, after content sections, desktop sidebar and bottom responsive slots.", "The site should look complete even before ads are approved. The AdSlot component uses clear placeholders to reduce layout shift. Even without ads, pages should be led by content, tools and data."] },
+        { heading: "Ongoing maintenance", body: ["Crypto markets change quickly, and stale content weakens trust. The site uses GitHub Actions to refresh market data and JSON caches daily, and pages show last updated time, source and data status. If a source fails, the page should show unavailable rather than filling the gap with fake data.", "Updates are not only numerical. When ETF markets, on-chain data sources, macro calendars or API limits change, methodology pages also need to change. This maintenance is costly, but it is necessary for a trustworthy financial information site."] }
+      ],
+      faq: [
+        { q: "Is this page only for AdSense?", a: "No. It is also a reader-facing transparency page. AdSense expects quality, but the real goal is to explain how the site handles data and risk." },
+        { q: "Does the site use AI-generated content?", a: "AI may assist with organization and drafting, but important pages must keep sources, limitations, risk language and human maintenance workflows." },
+        { q: "Will ads hurt the reading experience?", a: "They should not. The site avoids popups, overlays and deceptive placements, keeping content first." }
+      ]
+    }
   }
 ];
+
+type ContentSection = { heading: string; body: string[] };
+
+const qualitySeoPages = zhDeepSections.filter((entry): entry is SeoPage => "slug" in entry);
 
 const enDeepSections = [
   {
@@ -140,6 +318,7 @@ const enDeepSections = [
 ];
 
 export const seoPages: SeoPage[] = [
+  ...qualitySeoPages,
   {
     slug: "btc-dca-calculator",
     zh: {
@@ -580,7 +759,7 @@ export function getNewsArticle(slug: string) {
 
 export function expandedBody(copy: SeoCopy, locale: Locale) {
   const shared = locale === "zh" ? zhShared : enShared;
-  const deepSections = locale === "zh" ? zhDeepSections : enDeepSections;
+  const deepSections = (locale === "zh" ? zhDeepSections : enDeepSections).filter((section): section is ContentSection => "heading" in section);
   return [
     ...copy.sections,
     { heading: locale === "zh" ? "如何把本頁放進每日流程？" : "How this page fits a daily workflow", body: shared },

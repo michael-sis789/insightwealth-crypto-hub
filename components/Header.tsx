@@ -3,10 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, CalendarDays, Calculator, Languages, LineChart, Newspaper } from "lucide-react";
+import { BarChart3, BookOpen, CalendarDays, Calculator, Languages, LineChart, Newspaper } from "lucide-react";
 import { localizedPath, navItems, type Language } from "@/lib/i18n";
 
-const icons = [BarChart3, Calculator, LineChart, BarChart3, CalendarDays, Newspaper];
+const icons = [BookOpen, BarChart3, Calculator, LineChart, BarChart3, CalendarDays, Newspaper];
 
 function currentLanguage(pathname: string): Language {
   return pathname.startsWith("/en") ? "en" : "zh";

@@ -18,6 +18,7 @@ export const languages = {
 export type Language = keyof typeof languages;
 
 export const navItems = [
+  { href: "/start-here", zh: "新手指南", en: "Start Here" },
   { href: "/btc-dashboard", zh: "BTC儀表盤", en: "BTC Dashboard" },
   { href: "/btc-dca-calculator", zh: "DCA計算器", en: "DCA Calculator" },
   { href: "/crypto-etf-flow", zh: "ETF資金流", en: "ETF Flow" },
@@ -28,6 +29,10 @@ export const navItems = [
 
 export const localizedRoutes = [
   "/",
+  "/start-here",
+  "/bitcoin-investor-toolkit",
+  "/crypto-faq",
+  "/content-quality",
   "/btc-dashboard",
   "/btc-dca-calculator",
   "/btc-bull-bear-indicator",

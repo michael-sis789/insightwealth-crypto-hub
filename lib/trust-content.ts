@@ -67,10 +67,10 @@ export const methodology = {
       ]
     },
     {
-      heading: "每日7點更新",
+      heading: "每日8點更新",
       paragraphs: [
-        "GitHub Actions 會在每天馬來西亞時間 07:00 執行資料更新流程：更新BTC歷史價格、鏈上資料、ETF日期、事件日曆、市場快取、Bull Score、Daily Brief 與 YouTube 最新影片。",
-        "更新完成後會執行 lint 與 build，若有資料變更則提交到 GitHub。Netlify 只負責從 GitHub 自動部署；不再使用 Netlify CLI production deploy。"
+        "GitHub Actions 會在每天馬來西亞時間 08:00 執行資料更新流程：更新BTC歷史價格、鏈上資料、ETF日期、事件日曆、市場快取、Bull Score、Daily Brief 與 YouTube 最新影片。",
+        "更新完成後會執行 lint 與 build，若有資料變更則提交到 GitHub。Cloudflare 會從 GitHub 自動部署；不再使用 Netlify CLI production deploy。"
       ]
     }
   ],

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BarChart3, CalendarDays, Calculator, LineChart } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, CalendarDays, Calculator, LineChart, ShieldCheck } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { MetricCard } from "@/components/MetricCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -16,6 +16,13 @@ const tools = [
   { href: "/bitcoin-etf-flow", title: "Bitcoin ETF Flow", icon: LineChart, text: "追蹤IBIT、FBTC、ARKB、BITB、GBTC等ETF流向。" },
   { href: "/btc-bull-bear-indicator", title: "Bull Bear Indicator", icon: BarChart3, text: "用價格、情緒、ETF、鏈上與槓桿資料形成0-100分模型。" },
   { href: "/bitcoin-fear-greed-index", title: "Fear & Greed Index", icon: CalendarDays, text: "判斷市場恐懼、貪婪與DCA節奏。" }
+];
+
+const qualityGuides = [
+  { href: "/start-here", title: "新手指南", icon: BookOpen, text: "用五分鐘建立每日BTC檢查流程，先看重點，再看進階分析。" },
+  { href: "/bitcoin-investor-toolkit", title: "BTC投資者工具包", icon: ShieldCheck, text: "把DCA、現金流、最大回撤、ETF需求與Bull Score放進同一套規則。" },
+  { href: "/crypto-faq", title: "Crypto FAQ", icon: BookOpen, text: "快速回答Bitcoin、DCA、ETF Flow、Fear & Greed與鏈上指標常見問題。" },
+  { href: "/content-quality", title: "內容品質標準", icon: ShieldCheck, text: "公開資料來源、廣告位置、風險提示與避免薄內容的維護原則。" }
 ];
 
 export default async function HomePage() {
@@ -76,6 +83,29 @@ export default async function HomePage() {
           </div>
         </section>
         <AdSlot slotId="home-in-content" format="horizontal" className="mt-10" />
+        <section className="mt-10">
+          <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-gold">Start Here</p>
+              <h2 className="mt-2 text-2xl font-bold text-white">先建立流程，再使用工具</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-slate-400">
+                洞見財富不是薄內容工具站。每個核心頁面都提供原創解釋、資料來源、FAQ、風險限制與相關工具，幫助長期BTC投資者形成可重複的每日決策流程。
+              </p>
+            </div>
+            <Link href="/start-here" className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-4 py-3 text-sm font-bold text-gold hover:bg-gold/10">
+              查看完整指南 <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {qualityGuides.map((guide) => (
+              <Link key={guide.href} href={guide.href} className="premium-card rounded-lg p-5 hover:border-gold/60">
+                <guide.icon className="h-7 w-7 text-gold" />
+                <h3 className="mt-4 font-bold text-white">{guide.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">{guide.text}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-white">Popular Tools</h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">

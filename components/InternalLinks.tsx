@@ -2,6 +2,8 @@ import Link from "next/link";
 import { localizedPath, type Language } from "@/lib/i18n";
 
 const links = [
+  { href: "/start-here", zh: "新手指南", en: "Start Here" },
+  { href: "/bitcoin-investor-toolkit", zh: "BTC投資者工具包", en: "Bitcoin Investor Toolkit" },
   { href: "/btc-dashboard", zh: "BTC儀表盤", en: "BTC Dashboard" },
   { href: "/btc-dca-calculator", zh: "DCA計算器", en: "DCA Calculator" },
   { href: "/btc-bull-bear-indicator", zh: "牛熊指標", en: "Bull/Bear Indicator" },
@@ -10,7 +12,9 @@ const links = [
   { href: "/bitcoin-mvrv", zh: "MVRV估值", en: "MVRV" },
   { href: "/bitcoin-nupl", zh: "NUPL盈虧", en: "NUPL" },
   { href: "/bitcoin-puell-multiple", zh: "Puell礦工指標", en: "Puell Multiple" },
-  { href: "/daily-crypto-brief", zh: "最新每日簡報", en: "Latest Daily Brief" }
+  { href: "/daily-crypto-brief", zh: "最新每日簡報", en: "Latest Daily Brief" },
+  { href: "/crypto-faq", zh: "Crypto FAQ", en: "Crypto FAQ" },
+  { href: "/content-quality", zh: "內容品質標準", en: "Content Quality" }
 ];
 
 export function InternalLinks({ language }: { language: Language }) {

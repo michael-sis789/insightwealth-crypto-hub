@@ -23,6 +23,9 @@ export function Footer() {
           <p className="mt-3 max-w-xl text-sm leading-7 text-slate-400">{copy}</p>
         </div>
         <div className="grid gap-2 text-sm text-slate-400">
+          <Link href={localizedPath("/start-here", language)}>{language === "en" ? "Start Here" : "新手指南"}</Link>
+          <Link href={localizedPath("/bitcoin-investor-toolkit", language)}>{language === "en" ? "Bitcoin Investor Toolkit" : "BTC投資者工具包"}</Link>
+          <Link href={localizedPath("/crypto-faq", language)}>{language === "en" ? "Crypto FAQ" : "Crypto FAQ常見問題"}</Link>
           <Link href={localizedPath("/about", language)}>{language === "en" ? "About" : "關於我們"}</Link>
           <Link href={localizedPath("/author", language)}>{language === "en" ? "Author" : "作者"}</Link>
           <Link href={localizedPath("/editorial-policy", language)}>{language === "en" ? "Editorial Policy" : "編輯政策"}</Link>
@@ -32,6 +35,7 @@ export function Footer() {
           <a href="https://youtube.com/@9insightwealth" target="_blank" rel="noreferrer">{language === "en" ? "YouTube Channel" : "YouTube 頻道"}</a>
         </div>
         <div className="grid gap-2 text-sm text-slate-400">
+          <Link href={localizedPath("/content-quality", language)}>{language === "en" ? "Content Quality" : "內容品質標準"}</Link>
           <Link href={localizedPath("/methodology", language)}>{language === "en" ? "Methodology" : "資料方法論"}</Link>
           <Link href={localizedPath("/sources", language)}>{language === "en" ? "Sources" : "資料來源"}</Link>
           <Link href={localizedPath("/bitcoin-mvrv", language)}>{language === "en" ? "MVRV Guide" : "MVRV教學"}</Link>
