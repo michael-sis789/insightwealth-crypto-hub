@@ -1,10 +1,10 @@
 {
   "ok": true,
   "source": "Alternative.me Fear & Greed API",
-  "lastUpdated": "2026-08-15T01:03:12.467Z",
+  "lastUpdated": "2026-08-16T01:06:59.907Z",
   "value": {
     "value": 34,
     "classification": "Fear",
-    "timestamp": "2026-08-15T00:00:00.000Z"
+    "timestamp": "2026-08-16T00:00:00.000Z"
   }
 }
