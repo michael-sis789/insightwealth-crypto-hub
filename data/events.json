@@ -1,17 +1,5 @@
 [
   {
-    "date": "2026-08-21",
-    "title": "Bitcoin ETF週度資金流檢查",
-    "category": "ETF",
-    "impact": "medium",
-    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
-    "assets": [
-      "BTC"
-    ],
-    "source": "Insight Wealth weekly ETF review workflow",
-    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
-  },
-  {
     "date": "2026-08-26",
     "title": "美國PCE / Personal Income公布",
     "category": "Macro",
@@ -88,6 +76,18 @@
     ],
     "source": "Federal Reserve FOMC calendar",
     "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Bitcoin ETF週度資金流檢查",
+    "category": "ETF",
+    "impact": "medium",
+    "explanation": "週度檢查IBIT、FBTC、ARKB、BITB、GBTC與總淨流入，判斷機構需求是否延續。",
+    "assets": [
+      "BTC"
+    ],
+    "source": "Insight Wealth weekly ETF review workflow",
+    "sourceUrl": "https://insightwealth.live/bitcoin-etf-flow"
   },
   {
     "date": "2026-09-30",
