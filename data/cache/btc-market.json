@@ -1,11 +1,11 @@
 {
   "ok": true,
   "source": "CoinGecko API",
-  "lastUpdated": "2026-10-03T03:43:48.708Z",
+  "lastUpdated": "2026-10-04T04:13:38.161Z",
   "value": {
-    "priceUsd": 84609,
-    "change24hPct": -0.89586,
-    "change7dPct": 0.6238,
-    "marketCapUsd": 1700027459176
+    "priceUsd": 84810,
+    "change24hPct": 0.18646,
+    "change7dPct": 0.47,
+    "marketCapUsd": 1704092513174
   }
 }
