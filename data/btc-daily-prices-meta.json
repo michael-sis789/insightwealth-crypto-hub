@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-10-28T03:54:40.686Z",
+  "lastUpdated": "2026-10-29T04:17:57.457Z",
   "source": "CoinGecko",
   "sourceUrl": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart",
   "updateFrequency": "Daily cached update",
-  "count": 483,
+  "count": 484,
   "from": "2025-07-03",
-  "to": "2026-10-28",
+  "to": "2026-10-29",
   "added": 1
 }
