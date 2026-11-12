@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "label": "Updated daily / manually verified",
   "notes": "Daily Bitcoin on-chain indicators. Never replace unavailable values with mock data.",
   "indicators": {
     "mvrv": {
-      "value": 1.4916,
-      "date": "2026-11-04",
+      "value": 1.4095,
+      "date": "2026-11-05",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/mvrv/last",
       "updateFrequency": "Updated daily",
       "status": "Neutral",
-      "explanation": "MVRV衡量BTC市值相對已實現市值的位置。目前讀數為1.4916，用於判斷長期估值溫度，不適合單獨作為短線交易訊號。"
+      "explanation": "MVRV衡量BTC市值相對已實現市值的位置。目前讀數為1.4095，用於判斷長期估值溫度，不適合單獨作為短線交易訊號。"
     },
     "nupl": {
-      "value": 0.3296,
-      "date": "2026-11-04",
+      "value": 0.2905,
+      "date": "2026-11-05",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/nupl/last",
       "updateFrequency": "Updated daily",
       "status": "Neutral",
-      "explanation": "NUPL衡量市場整體未實現盈虧。目前讀數為0.3296，越高代表獲利盤越多，越低代表市場壓力更明顯。"
+      "explanation": "NUPL衡量市場整體未實現盈虧。目前讀數為0.2905，越高代表獲利盤越多，越低代表市場壓力更明顯。"
     },
     "puell": {
-      "value": 1.0243,
-      "date": "2026-11-04",
+      "value": 0.9427,
+      "date": "2026-11-05",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/puell-multiple/last",
       "updateFrequency": "Updated daily",
       "status": "Neutral",
-      "explanation": "Puell Multiple衡量礦工日收入相對一年平均值。目前讀數為1.0243，用於觀察礦工收入與週期壓力。"
+      "explanation": "Puell Multiple衡量礦工日收入相對一年平均值。目前讀數為0.9427，用於觀察礦工收入與週期壓力。"
     },
     "realizedPrice": {
-      "value": 53952.45,
-      "date": "2026-11-04",
+      "value": 53947.12,
+      "date": "2026-11-05",
       "source": "BGeometrics",
       "sourceUrl": "https://bitcoin-data.com/v1/realized-price/last",
       "updateFrequency": "Updated daily",
       "status": "Neutral",
-      "explanation": "Realized Price代表鏈上成本基礎的近似值。目前讀數為53952.45美元，作為長期估值背景資料。"
+      "explanation": "Realized Price代表鏈上成本基礎的近似值。目前讀數為53947.12美元，作為長期估值背景資料。"
     }
   }
 }
